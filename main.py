@@ -534,6 +534,7 @@ def pp():
 main_print()
 
 game_mode = 'main'
+#
 
 while True:
     if game_mode == 'main':
