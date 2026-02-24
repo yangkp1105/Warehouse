@@ -6,8 +6,15 @@ import math
 import random
 import hashlib
 from cryptography.fernet import Fernet
+import sys
+import importlib.util
 
-import blackjack
+pyc_path = r'Money Games\__pycache__\blackjack.pyc'  # 使用完整路径
+
+# 加载模块
+spec = importlib.util.spec_from_file_location('blackjack', pyc_path)
+blackjack = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(blackjack)
 
 levels_num_book={'1': 500,#字典数字等级对应{'x+1'级}方便写代码
                  '2': 2000,
@@ -557,7 +564,7 @@ while True:
         elif keyboard.is_pressed('4'):
             print('你选择了二十一点')
             game_mode = 'blackjack'
-            pp()
+            blackjack.bj_print()
                 # 在这里添加二十一点游戏的逻辑
             time.sleep(1)
         elif keyboard.is_pressed('5'):#借钱
@@ -706,4 +713,4 @@ while True:
                 time.sleep(1)
     elif game_mode == 'blackjack':
         if keyboard.is_pressed('1'):
-            
+            blackjack.bj_rule()
