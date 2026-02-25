@@ -238,6 +238,61 @@ class Game:
         keyboard.read_key()
         time.sleep(0.2)
 
+class PokerGame:
+    def __init__(self):
+        self.deck = self.create_deck()
+        self.drawn_cards = []
+        self.card_counts = self.init_card_counts()
+    
+    def create_deck(self):
+        #创建完整的牌组
+        suits = ['♠', '♥', '♣', '♦']
+        ranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
+        
+        deck = []
+        for suit in suits:
+            for rank in ranks:
+                deck.append(f'{rank}{suit}')
+        return deck
+    
+    def init_card_counts(self):
+        #初始化每张牌的数量统计
+        counts = {}
+        for card in self.deck:
+            counts[card] = 1
+        return counts
+    
+    def draw_card(self):
+        #随机抽取一张牌（不重复）
+        available_cards = [card for card in self.deck if card not in self.drawn_cards]
+        
+        if not available_cards:
+            print("牌已经抽完了！")
+            return None
+        
+        drawn_card = random.choice(available_cards)
+        self.drawn_cards.append(drawn_card)
+        self.card_counts[drawn_card] = 0
+        return drawn_card
+    
+    def get_rank_count(self, rank):
+        #获取某个点数（如K）已经被抽走的数量
+        count = 0
+        for card in self.drawn_cards:
+            if card.startswith(rank):
+                count += 1
+        return count
+    
+    def get_remaining_cards(self):
+        #获取剩余牌的数量
+        return len(self.deck) - len(self.drawn_cards)
+    
+    def reset(self):
+        #重置游戏
+        self.drawn_cards = []
+        self.card_counts = self.init_card_counts()
+
+bj = PokerGame()
 game = Game('data.json', 'secret.key')
 
 print('广州市第二中学2023届230516开发')
@@ -335,6 +390,8 @@ def game_mode_3_start():
         if chosen in boom_num:
             if game.data['invincible_mode'] == 1:
                 print('你中枪了，但无敌模式已开启，你没有失去游戏账号数据！')
+                for i in range(20):
+                    print('不要赌博，赌博害人也害己')
                 continue
             else:
                 print(f"你中枪了，你失去游戏账号数据！")
@@ -369,6 +426,9 @@ def game_mode_3_start():
                 break
             elif choice == '1':
                 continue
+
+def game_mode_4_start():
+    print('')
 
 def get_money():
     print('银行最多可以借你的资产*(0.6*等级)，但是利率低。个人最多可以借你的资产*(0.9*等级)，利率中。xx科技公司可以借无上限，但是利率很高。')
@@ -713,6 +773,26 @@ while True:
                 main_print()
                 time.sleep(1)
     elif game_mode == 'blackjack':
-        if keyboard.is_pressed('1'):
+        if keyboard.is_pressed('0'):
+            game_mode = 'main'
+            main_print()
+            time.sleep(1)
+        elif keyboard.is_pressed('1'):
             blackjack.bj_rule()
-            print()
+            time.sleep(1)
+        elif keyboard.is_pressed('2'):
+            bj_level = 1
+            blackjack.bj_1()
+            time.sleep(1)
+        elif keyboard.is_pressed('3'):
+            bj_level = 2
+            blackjack.bj_2()
+            time.sleep(1)
+        elif keyboard.is_pressed('4'):
+            bj_level = 3
+            blackjack.bj_3()
+            time.sleep(1)
+        elif keyboard.is_pressed('5'):
+            bj_level = 4
+            blackjack.bj_4()
+            time.sleep(1)
