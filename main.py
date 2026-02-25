@@ -565,6 +565,7 @@ while True:
             print('你选择了二十一点')
             game_mode = 'blackjack'
             blackjack.bj_print()
+            
                 # 在这里添加二十一点游戏的逻辑
             time.sleep(1)
         elif keyboard.is_pressed('5'):#借钱
@@ -714,3 +715,4 @@ while True:
     elif game_mode == 'blackjack':
         if keyboard.is_pressed('1'):
             blackjack.bj_rule()
+            
