@@ -715,4 +715,4 @@ while True:
     elif game_mode == 'blackjack':
         if keyboard.is_pressed('1'):
             blackjack.bj_rule()
-            
+            print()
