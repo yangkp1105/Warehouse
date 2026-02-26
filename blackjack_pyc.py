@@ -5,9 +5,7 @@ def import_main():
     from main import Game
 
     game = Game('data.json', 'secret.key')
-
-ai_card = []
-user_card = []
+    return game
 
 class PokerGame:
     def __init__(self):
@@ -49,7 +47,7 @@ class PokerGame:
         #获取某个点数（如K）已经被抽走的数量
         count = 0
         for card in self.drawn_cards:
-            if card.startswith(rank):
+            if card[0] == rank:
                 count += 1
         return count
     
@@ -74,44 +72,36 @@ def bj_rule():
     print('你讲面对人机庄家，你只能看到他的第一张牌的点数，后面的点数你不知道，但是你知道他有多少张牌')
     print('J,Q,K算10点，A算11点')
     print('你可以叫牌或者停牌（拿一张或者，不再要拍）')
-    print('当双方都停牌以后谁最接近21点谁就赢并获得奖池所有筹码')
-    print('当你叫牌之后点数总和超过21点，你就爆牌输掉了比赛')
-    print('0.返回')
+    print('当双方都停牌以后谁最接近21点谁就赢并获得double筹码')
+    print('当你叫牌之后点数总和超过21点，你就爆牌输掉了')
+    print('双击0.返回')
     if keyboard.is_modifier('0'):
         return True
 
 def bj_1():
-    if Game.get_money() >= 10:
+    game = Game('data.json', 'secret.key')
+    if game.get_money() >= 10:
         print('您有资格参与小场')
     else:
         print('不好意思您无法进场')
 
 def bj_2():
-    if Game.get_money() >= 50000:
+    game = Game('data.json', 'secret.key')
+    if game.get_money() >= 50000:
         print('您有资格参与中场')
     else:
         print('您无法进场')
 
 def bj_3():
-    if Game.get_money() >= 1000000:
+    game = Game('data.json', 'secret.key')
+    if game.get_money() >= 1000000:
         print('您有资格参与大场')
     else:
         print('您无法进场')
 
-def bj_2():
-    if Game.get_money() >= 10000000:
+def bj_4():
+    game = Game('data.json', 'secret.key')
+    if game.get_money() >= 10000000:
         print('您有资格参与至尊场')
     else:
         print('您无法进场')
-
-def AI_bj():
-    ai_get_card  = poker.draw_card()
-    ai_card.append(1,f'{ranks}')
-    ai_get_card = poker.draw_card()
-    ai_card.append(1,f'{suit}')
-    print(ai_card)
-
-AI_bj()
-
-if __name__ == "__main__":
-    import_main()

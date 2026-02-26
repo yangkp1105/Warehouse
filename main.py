@@ -274,7 +274,6 @@ class PokerGame:
         
         drawn_card = random.choice(available_cards)
         self.drawn_cards.append(drawn_card)
-        self.card_counts[drawn_card] = 0
         return drawn_card
     
     def get_rank_count(self, rank):
@@ -293,6 +292,7 @@ class PokerGame:
         #重置游戏
         self.drawn_cards = []
         self.card_counts = self.init_card_counts()
+
 poker = PokerGame()
 game = Game('data.json', 'secret.key')
 
@@ -434,6 +434,40 @@ def AI_bj():
     ai_get_card  = poker.draw_card()
     ranks = ai_get_card[:-1]
     ai_card.append(1,f'{ranks}')
+    print(f'{ranks}')
+
+def bj_1():
+    game = Game('data.json', 'secret.key')
+    if game.get_money() >= 10:
+        print('您有资格参与小场')
+        return True
+    else:
+        print('不好意思您无法进场')
+        return False
+
+def bj_2():
+    game = Game('data.json', 'secret.key')
+    if game.get_money() >= 50000:
+        print('您有资格参与中场')
+    else:
+        print('您无法进场')
+        return False
+
+def bj_3():
+    game = Game('data.json', 'secret.key')
+    if game.get_money() >= 1000000:
+        print('您有资格参与大场')
+    else:
+        print('您无法进场')
+        return False
+
+def bj_4():
+    game = Game('data.json', 'secret.key')
+    if game.get_money() >= 10000000:
+        print('您有资格参与至尊场')
+    else:
+        print('您无法进场')
+        return False
 
 def get_money():
     print('银行最多可以借你的资产*(0.6*等级)，但是利率低。个人最多可以借你的资产*(0.9*等级)，利率中。xx科技公司可以借无上限，但是利率很高。')
@@ -629,8 +663,12 @@ while True:
         elif keyboard.is_pressed('4'):
             print('你选择了二十一点')
             game_mode = 'blackjack'
+            while keyboard.is_pressed('4'):
+                time.sleep(0.1)
+            time.sleep(0.2)  # 额外等待
+            game_mode = 'blackjack'
             blackjack.bj_print()
-            
+            time.sleep(0.2)
                 # 在这里添加二十一点游戏的逻辑
             time.sleep(1)
         elif keyboard.is_pressed('5'):#借钱
@@ -652,7 +690,8 @@ while True:
             exit()
         elif keyboard.is_pressed('8'):
             game_mode = 'game_explain'
-            print('游戏版本：v1.0.3  发布时间：2026/2/23')
+            print('***************************************************************************************************')
+            print('游戏版本：v1.0.4beta  发布时间：2026/2/26')
             print('广州市第二中学2023届230516开发')
             print('作者的话：')
             print('写这个游戏其实有小学的因素，我在小学机房里面留下的CS1.6，给很多我下几届的学生带来一点娱乐')
@@ -664,6 +703,7 @@ while True:
             print('如果你想完成这个游戏，可以在github上找到这个项目，或者添加微信号：vicetone9y9，备注：main.py')
             print('***************************************************************************************************')
             print('更新日志:\nv1.0.1 2026/2/21 游戏大体结构创建\nv1.0.2 2026/2/22 游戏3搭建完成，大厅优化,增加管理者模式\nv1.0.3 2026/2/23 增加无敌模式，借money，月份系统。优化储存，数据加密')
+            print('v1.0.4beta 2026/2/26 修复巨大的储存调用bug，优化扑克牌系统，完成21点项目菜单')
             print('0.返回')
     elif game_mode == 'game_explain':
         if keyboard.is_pressed('0'):
@@ -778,50 +818,73 @@ while True:
                 main_print()
                 time.sleep(1)
     elif game_mode == 'blackjack':
-        if keyboard.is_pressed('0'):
-            game_mode = 'main'
+        ai_card_num = 0#初始化AI手牌数量
+        choice = str(input('请输入数字'))
+        if choice == '0':
             main_print()
+            game_mode = 'main'
             time.sleep(1)
-        elif keyboard.is_pressed('1'):
+        elif choice == '1':
+            game_mode = 'bj_rule'
             blackjack.bj_rule()
             game_mode = 'bj_rule'
+            AI_bj()
             time.sleep(1)
-        elif keyboard.is_pressed('2'):
+        elif choice == '2':
             bj_level = 1
-            blackjack.bj_1()
+            bj_1()
+            if not bj_1():
+                game_mode = 'blackjack'
+                blackjack.bj_print()
             input_money_bj = int(input("输入******:"))
             if input_money_bj <= 10:
                 print('You need call more money!')
             elif input_money_bj > 10000:
                 print('You call money too more,you can turn up a level. ')
             time.sleep(1)
-        elif keyboard.is_pressed('3'):
+        elif choice == '3':
             bj_level = 2
-            blackjack.bj_2()
+            bj_2()
+            if not bj_2():
+                game_mode = 'blackjack'
+                blackjack.bj_print()
             input_money_bj = int(input("输入******:"))
             if input_money_bj <= 50000:
                 print('You need call more money!')
             elif input_money_bj > 400000:
                 print('You call money too more,you can turn up a level. ')
             time.sleep(1)
-        elif keyboard.is_pressed('4'):
+        elif choice == '4':
             bj_level = 3
-            blackjack.bj_3()
+            bj_3()
+            if not bj_3():
+                game_mode = 'blackjack'
+                blackjack.bj_print()
             input_money_bj = int(input("输入******:"))
             if input_money_bj <= 1000000:
                 print('You need call more money!')
             elif input_money_bj > 3000000:
                 print('You call money too more,you can turn up a level. ')
             time.sleep(1)
-        elif keyboard.is_pressed('5'):
+        elif choice == '5':
             bj_level = 4
-            blackjack.bj_4()
+            bj_4()
+            if not bj_4():
+                game_mode = 'blackjack'
+                blackjack.bj_print()
             input_money_bj = int(input("输入******:"))
             if input_money_bj <= 10000000:
                 print('You need call more money!')
             time.sleep(1)
-        elif game_mode == 'bj_rule':
-                if keyboard.is_pressed('0'):
-                    game_mode = 'blackjack'
-                    blackjack.bj_print()
-                    time.sleep(1)
+    elif game_mode == 'bj_rule':
+            if keyboard.is_pressed('0'):
+                game_mode = 'blackjack'
+                blackjack.bj_print()
+                time.sleep(1)
+
+
+
+
+
+
+#检验21点的AI_bj()输出情况
