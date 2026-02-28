@@ -1,0 +1,7 @@
+pyglet==1.5.11
+gym
+numpy>=1.21.0,<2.0
+pandas
+matplotlib
+docopt
+cloudpickle
