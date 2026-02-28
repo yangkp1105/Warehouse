@@ -1,0 +1,326 @@
+2026-02-27 22:13:31,751 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:16:22,827 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:22:25,327 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:25:44,854 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:27:32,079 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:27:32,087 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-27 22:27:32,088 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-27 22:27:32,089 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-27 22:27:32,090 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-27 22:27:32,091 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-27 22:27:32,095 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['5S', 'TC'] and $500
+2026-02-27 22:27:32,096 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['KD', 'JC'] and $500
+2026-02-27 22:27:32,097 - INFO - env.py - _initiate_round - 504 - 
+2026-02-27 22:27:32,098 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-27 22:27:32,099 - INFO - env.py - _process_decision - 408 - Seat 1 (Keypress): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-27 22:27:32,099 - INFO - env.py - _process_decision - 408 - Seat 0 (Keypress): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-27 22:31:38,255 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:32:01,684 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:43:36,428 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:44:42,338 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:44:42,338 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-27 22:44:42,338 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-27 22:44:42,338 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-27 22:44:42,338 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-27 22:44:42,338 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-27 22:44:42,338 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['7C', '8H'] and $500
+2026-02-27 22:44:42,355 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['JS', 'JC'] and $500
+2026-02-27 22:44:42,355 - INFO - env.py - _initiate_round - 504 - 
+2026-02-27 22:44:42,355 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-27 22:44:42,355 - INFO - env.py - _process_decision - 408 - Seat 1 (Keypress): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-27 22:44:42,355 - INFO - env.py - _process_decision - 408 - Seat 0 (Keypress): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-27 22:45:49,480 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:45:49,489 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-27 22:45:49,490 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-27 22:45:49,491 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-27 22:45:49,492 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-27 22:45:49,493 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-27 22:45:49,494 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['TS', 'JS'] and $500
+2026-02-27 22:45:49,495 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['8S', '5C'] and $500
+2026-02-27 22:45:49,496 - INFO - env.py - _initiate_round - 504 - 
+2026-02-27 22:45:49,496 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-27 22:45:49,500 - INFO - env.py - _process_decision - 408 - Seat 1 (Keypress): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-27 22:45:49,502 - INFO - env.py - _process_decision - 408 - Seat 0 (Keypress): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-27 22:47:32,595 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:47:32,598 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-27 22:47:32,598 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-27 22:47:32,598 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-27 22:47:32,598 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-27 22:47:32,598 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-27 22:47:32,598 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['2H', 'TD'] and $500
+2026-02-27 22:47:32,598 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['9H', 'AS'] and $500
+2026-02-27 22:47:32,598 - INFO - env.py - _initiate_round - 504 - 
+2026-02-27 22:47:32,598 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-27 22:47:32,598 - INFO - env.py - _process_decision - 408 - Seat 1 (Keypress): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-27 22:47:32,598 - INFO - env.py - _process_decision - 408 - Seat 0 (Keypress): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-27 22:48:10,580 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:48:10,588 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-27 22:48:10,589 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-27 22:48:10,590 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-27 22:48:10,591 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-27 22:48:10,592 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-27 22:48:10,593 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['2S', '8D'] and $500
+2026-02-27 22:48:10,594 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['AD', 'TC'] and $500
+2026-02-27 22:48:10,594 - INFO - env.py - _initiate_round - 504 - 
+2026-02-27 22:48:10,599 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-27 22:48:10,600 - INFO - env.py - _process_decision - 408 - Seat 1 (Keypress): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-27 22:48:10,601 - INFO - env.py - _process_decision - 408 - Seat 0 (Keypress): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-27 22:49:48,087 - INFO - env.py - _process_decision - 408 - Seat 1 (Keypress): Action.CALL - Remaining stack: 498, Round pot: 4, Community pot: 0, player pot: 2
+2026-02-27 22:50:28,392 - INFO - env.py - _process_decision - 408 - Seat 0 (Keypress): Action.CHECK - Remaining stack: 498, Round pot: 4, Community pot: 0, player pot: 2
+2026-02-27 22:50:28,392 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:50:28,392 - INFO - env.py - _distribute_cards_to_table - 677 - Cards on table: ['TH', 'TS', '3C']
+2026-02-27 22:50:28,392 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:50:28,392 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.FLOP ===
+2026-02-27 22:52:13,305 - INFO - env.py - _process_decision - 408 - Seat 0 (Keypress): Action.RAISE_POT - Remaining stack: 490, Round pot: 8, Community pot: 8, player pot: 8
+2026-02-27 22:52:25,402 - INFO - env.py - _process_decision - 408 - Seat 1 (Keypress): Action.CALL - Remaining stack: 490, Round pot: 16, Community pot: 8, player pot: 8
+2026-02-27 22:52:25,406 - INFO - cycle.py - next_player - 74 - Max steps without raising has been reached. For example all calls after raiser.
+2026-02-27 22:52:25,407 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:52:25,407 - INFO - env.py - _distribute_cards_to_table - 677 - Cards on table: ['TH', 'TS', '3C', '5H']
+2026-02-27 22:52:25,408 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:52:25,409 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.TURN ===
+2026-02-27 22:52:35,400 - INFO - env.py - _process_decision - 408 - Seat 0 (Keypress): Action.CHECK - Remaining stack: 490, Round pot: 0, Community pot: 40, player pot: 0
+2026-02-27 22:53:00,662 - INFO - env.py - _process_decision - 408 - Seat 1 (Keypress): Action.RAISE_POT - Remaining stack: 450, Round pot: 40, Community pot: 40, player pot: 40
+2026-02-27 22:53:04,777 - INFO - env.py - _process_decision - 408 - Seat 0 (Keypress): Action.CALL - Remaining stack: 450, Round pot: 80, Community pot: 40, player pot: 40
+2026-02-27 22:53:04,779 - INFO - cycle.py - next_player - 74 - Max steps without raising has been reached. For example all calls after raiser.
+2026-02-27 22:53:04,781 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:53:04,782 - INFO - env.py - _distribute_cards_to_table - 677 - Cards on table: ['TH', 'TS', '3C', '5H', 'KH']
+2026-02-27 22:53:04,783 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:53:04,784 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.RIVER ===
+2026-02-27 22:54:19,784 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:54:19,804 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-27 22:54:19,805 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-27 22:54:19,806 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-27 22:54:19,808 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-27 22:54:19,809 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-27 22:54:19,810 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['4D', '5S'] and $500
+2026-02-27 22:54:19,811 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['6C', 'KS'] and $500
+2026-02-27 22:54:19,812 - INFO - env.py - _distribute_cards - 671 - Player 2 got ['6D', 'JC'] and $500
+2026-02-27 22:54:19,813 - INFO - env.py - _distribute_cards - 671 - Player 3 got ['9H', '9D'] and $500
+2026-02-27 22:54:19,813 - INFO - env.py - _distribute_cards - 671 - Player 4 got ['AH', '8D'] and $500
+2026-02-27 22:54:19,814 - INFO - env.py - _distribute_cards - 671 - Player 5 got ['8S', 'TH'] and $500
+2026-02-27 22:54:19,818 - INFO - env.py - _initiate_round - 504 - 
+2026-02-27 22:54:19,819 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-27 22:54:19,820 - INFO - env.py - _process_decision - 408 - Seat 1 (equity/50/80): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-27 22:54:19,821 - INFO - env.py - _process_decision - 408 - Seat 2 (equity/70/70): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-27 22:54:21,100 - INFO - env.py - _process_decision - 408 - Seat 3 (equity/20/30): Action.ALL_IN - Remaining stack: 0, Round pot: 503, Community pot: 0, player pot: 500
+2026-02-27 22:54:21,484 - INFO - env.py - _process_decision - 408 - Seat 4 (Random): Action.FOLD - Remaining stack: 500, Round pot: 503, Community pot: 0, player pot: 0
+2026-02-27 22:54:21,835 - INFO - env.py - _process_decision - 408 - Seat 5 (Random): Action.FOLD - Remaining stack: 500, Round pot: 503, Community pot: 0, player pot: 0
+2026-02-27 22:54:22,218 - INFO - env.py - _process_decision - 408 - Seat 0 (equity/50/50): Action.ALL_IN - Remaining stack: 0, Round pot: 1003, Community pot: 0, player pot: 500
+2026-02-27 22:54:22,551 - INFO - env.py - _process_decision - 408 - Seat 1 (equity/50/80): Action.ALL_IN - Remaining stack: 0, Round pot: 1502, Community pot: 0, player pot: 500
+2026-02-27 22:54:22,866 - INFO - env.py - _process_decision - 408 - Seat 2 (equity/70/70): Action.ALL_IN - Remaining stack: 0, Round pot: 2000, Community pot: 0, player pot: 500
+2026-02-27 22:54:22,866 - INFO - cycle.py - next_player - 74 - Max steps without raising has been reached. For example all calls after raiser.
+2026-02-27 22:54:22,866 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:54:22,866 - INFO - env.py - _distribute_cards_to_table - 677 - Cards on table: ['9S', '5H', 'QH']
+2026-02-27 22:54:22,866 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:54:22,866 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.FLOP ===
+2026-02-27 22:54:22,866 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:54:22,866 - INFO - env.py - _distribute_cards_to_table - 677 - Cards on table: ['9S', '5H', 'QH', '3H']
+2026-02-27 22:54:22,866 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:54:22,866 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.TURN ===
+2026-02-27 22:54:22,866 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:54:22,866 - INFO - env.py - _distribute_cards_to_table - 677 - Cards on table: ['9S', '5H', 'QH', '3H', '4C']
+2026-02-27 22:54:22,866 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:54:22,866 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.RIVER ===
+2026-02-27 22:54:22,882 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:54:22,885 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:54:22,885 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.SHOWDOWN ===
+2026-02-27 22:54:22,885 - INFO - env.py - _initiate_round - 521 - Showdown
+2026-02-27 22:54:22,885 - INFO - env.py - _get_winner - 585 - Player 3 won: ThreeOfAKind
+2026-02-27 22:54:22,885 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-27 22:54:22,885 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-27 22:54:22,885 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-27 22:54:22,885 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-27 22:54:22,885 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 3
+2026-02-27 22:54:22,885 - INFO - env.py - _distribute_cards - 671 - Player 3 got ['9H', 'AS'] and $2000
+2026-02-27 22:54:22,885 - INFO - env.py - _distribute_cards - 671 - Player 4 got ['3H', 'TS'] and $500
+2026-02-27 22:54:22,885 - INFO - env.py - _distribute_cards - 671 - Player 5 got ['3S', '4C'] and $500
+2026-02-27 22:54:22,885 - INFO - env.py - _initiate_round - 504 - 
+2026-02-27 22:54:22,885 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-27 22:54:22,900 - INFO - env.py - _process_decision - 408 - Seat 4 (Random): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-27 22:54:22,903 - INFO - env.py - _process_decision - 408 - Seat 5 (Random): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-27 22:54:23,167 - INFO - env.py - _process_decision - 408 - Seat 3 (equity/20/30): Action.ALL_IN - Remaining stack: 0, Round pot: 2003, Community pot: 0, player pot: 2000
+2026-02-27 22:54:23,450 - INFO - env.py - _process_decision - 408 - Seat 4 (Random): Action.CALL - Remaining stack: 0, Round pot: 2502, Community pot: 0, player pot: 500
+2026-02-27 22:54:23,733 - INFO - env.py - _process_decision - 408 - Seat 5 (Random): Action.CALL - Remaining stack: 0, Round pot: 3000, Community pot: 0, player pot: 500
+2026-02-27 22:54:23,733 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:54:23,733 - INFO - env.py - _distribute_cards_to_table - 677 - Cards on table: ['KD', '8S', '5S']
+2026-02-27 22:54:23,733 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:54:23,733 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.FLOP ===
+2026-02-27 22:54:23,733 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:54:23,733 - INFO - env.py - _distribute_cards_to_table - 677 - Cards on table: ['KD', '8S', '5S', '8H']
+2026-02-27 22:54:23,733 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:54:23,733 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.TURN ===
+2026-02-27 22:54:23,733 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:54:23,733 - INFO - env.py - _distribute_cards_to_table - 677 - Cards on table: ['KD', '8S', '5S', '8H', '9C']
+2026-02-27 22:54:23,733 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:54:23,733 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.RIVER ===
+2026-02-27 22:54:23,733 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:54:23,751 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:54:23,751 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.SHOWDOWN ===
+2026-02-27 22:54:23,751 - INFO - env.py - _initiate_round - 521 - Showdown
+2026-02-27 22:54:23,751 - INFO - env.py - _get_winner - 585 - Player 3 won: TwoPair
+2026-02-27 22:54:23,751 - INFO - env.py - _game_over - 473 - Game over.
+2026-02-27 22:54:25,016 - INFO - env.py - _game_over - 479 -    0 - equity/50/50  1 - equity/50/80  2 - equity/70/70  3 - equity/20/30  4 - Random  5 - Random
+0               500               500               500               500         500         500
+0                 0                 0                 0              2000         500         500
+0                 0                 0                 0              3000           0           0
+2026-02-27 22:54:29,648 - INFO - env.py - _game_over - 485 - 3    1
+Name: count, dtype: int64
+2026-02-27 22:54:29,650 - INFO - env.py - _game_over - 486 - Best Player: 3
+2026-02-27 23:00:49,031 - INFO - main.py - command_line_parser - 56 - Initializing program
+2026-02-27 23:01:57,067 - INFO - main.py - command_line_parser - 56 - Initializing program
+2026-02-27 23:02:08,012 - INFO - main.py - command_line_parser - 56 - Initializing program
+2026-02-27 23:02:08,028 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-27 23:02:08,028 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-27 23:02:08,028 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-27 23:02:08,028 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-27 23:02:08,028 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-27 23:02:08,028 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['9S', '7C'] and $500
+2026-02-27 23:02:08,028 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['6S', 'KC'] and $500
+2026-02-27 23:02:08,028 - INFO - env.py - _initiate_round - 504 - 
+2026-02-27 23:02:08,028 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-27 23:02:08,028 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-27 23:02:08,028 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-27 23:02:09,199 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.RAISE_POT - Remaining stack: 496, Round pot: 6, Community pot: 0, player pot: 4
+2026-02-28 07:57:45,455 - INFO - main.py - command_line_parser - 56 - Initializing program
+2026-02-28 07:57:45,455 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 07:57:45,471 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 07:57:45,471 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 07:57:45,471 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 07:57:45,471 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-28 07:57:45,471 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['2D', '5S'] and $500
+2026-02-28 07:57:45,471 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['8H', 'KD'] and $500
+2026-02-28 07:57:45,471 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 07:57:45,471 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 07:57:45,471 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 07:57:45,471 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 07:57:46,489 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.RAISE_POT - Remaining stack: 496, Round pot: 6, Community pot: 0, player pot: 4
+2026-02-28 07:59:50,967 - INFO - main.py - command_line_parser - 56 - Initializing program
+2026-02-28 07:59:50,967 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 07:59:50,967 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 07:59:50,967 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 07:59:50,967 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 07:59:50,967 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-28 07:59:50,967 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['8C', '4H'] and $500
+2026-02-28 07:59:50,967 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['9S', 'QD'] and $500
+2026-02-28 07:59:50,967 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 07:59:50,982 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 07:59:50,982 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 07:59:50,982 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 07:59:51,920 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.RAISE_POT - Remaining stack: 496, Round pot: 6, Community pot: 0, player pot: 4
+2026-02-28 08:00:42,594 - INFO - main.py - command_line_parser - 56 - Initializing program
+2026-02-28 08:00:42,594 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 08:00:42,609 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 08:00:42,609 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 08:00:42,609 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 08:00:42,609 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-28 08:00:42,609 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['9C', 'QD'] and $500
+2026-02-28 08:00:42,609 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['6H', 'AH'] and $500
+2026-02-28 08:00:42,609 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 08:00:42,609 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 08:00:42,609 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 08:00:42,609 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 08:00:42,734 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.RAISE_POT - Remaining stack: 496, Round pot: 6, Community pot: 0, player pot: 4
+2026-02-28 08:04:10,364 - INFO - main.py - command_line_parser - 125 - Initializing program
+2026-02-28 08:04:10,380 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 08:04:10,380 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 08:04:10,380 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 08:04:10,380 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 08:04:10,380 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-28 08:04:10,380 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['2S', 'KC'] and $500
+2026-02-28 08:04:10,380 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['AC', 'AH'] and $500
+2026-02-28 08:04:10,380 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 08:04:10,380 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 08:04:10,396 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 08:04:10,396 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 08:04:10,505 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.ALL_IN - Remaining stack: 0, Round pot: 502, Community pot: 0, player pot: 500
+2026-02-28 08:14:47,251 - INFO - main.py - command_line_parser - 125 - Initializing program
+2026-02-28 08:14:47,251 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 08:14:47,251 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 08:14:47,267 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 08:14:47,267 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 08:14:47,267 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-28 08:14:47,267 - INFO - env.py - _distribute_cards - 673 - ÕÊº“ 0  ÷≈∆ ['JC', '9H']£¨≥Ô¬Î $500
+2026-02-28 08:14:47,267 - INFO - env.py - _distribute_cards - 675 - ÕÊº“ 1  ÷≈∆ [??, ??]£¨≥Ô¬Î $500
+2026-02-28 08:14:47,267 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 08:14:47,267 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 08:14:47,267 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 08:14:47,267 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 08:14:47,376 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.RAISE_POT - Remaining stack: 496, Round pot: 6, Community pot: 0, player pot: 4
+2026-02-28 08:21:30,266 - INFO - main.py - command_line_parser - 125 - Initializing program
+2026-02-28 08:21:30,282 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 08:21:30,282 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 08:21:30,282 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 08:21:30,282 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 08:21:30,282 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-28 08:21:30,282 - INFO - env.py - _distribute_cards - 673 - ÕÊº“ 0  ÷≈∆ ['6D', 'TC']£¨≥Ô¬Î $500
+2026-02-28 08:21:30,282 - INFO - env.py - _distribute_cards - 675 - ÕÊº“ 1  ÷≈∆ [??, ??]£¨≥Ô¬Î $500
+2026-02-28 08:21:30,282 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 08:21:30,282 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 08:21:30,282 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 08:21:30,282 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 08:21:30,407 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.RAISE_POT - Remaining stack: 496, Round pot: 6, Community pot: 0, player pot: 4
+2026-02-28 08:24:08,432 - INFO - main.py - command_line_parser - 125 - Initializing program
+2026-02-28 08:24:08,432 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 08:24:08,432 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 08:24:08,432 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 08:24:08,432 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 08:24:08,432 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-28 08:24:08,432 - INFO - env.py - _distribute_cards - 673 - ÕÊº“ 0  ÷≈∆ ['4S', 'KD']£¨≥Ô¬Î $500
+2026-02-28 08:24:08,432 - INFO - env.py - _distribute_cards - 675 - ÕÊº“ 1  ÷≈∆ [??, ??]£¨≥Ô¬Î $500
+2026-02-28 08:24:08,448 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 08:24:08,448 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 08:24:08,448 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 08:24:08,448 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 08:24:08,557 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.FOLD - Remaining stack: 499, Round pot: 3, Community pot: 0, player pot: 1
+2026-02-28 08:24:08,557 - INFO - env.py - _next_player - 609 - Only one player remaining in round
+2026-02-28 08:24:08,557 - INFO - env.py - _get_winner - 585 - Player 0 won: Only remaining player in round
+2026-02-28 08:24:08,557 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 08:24:08,557 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 08:24:08,557 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 08:24:08,572 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 08:24:08,572 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 1
+2026-02-28 08:24:08,572 - INFO - env.py - _distribute_cards - 673 - ÕÊº“ 0  ÷≈∆ ['6S', 'AH']£¨≥Ô¬Î $501
+2026-02-28 08:24:08,572 - INFO - env.py - _distribute_cards - 675 - ÕÊº“ 1  ÷≈∆ [??, ??]£¨≥Ô¬Î $499
+2026-02-28 08:24:08,572 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 08:24:08,572 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 08:24:08,572 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.SMALL_BLIND - Remaining stack: 500, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 08:24:08,572 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.BIG_BLIND - Remaining stack: 497, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 08:29:32,677 - INFO - main.py - command_line_parser - 54 - Initializing program
+2026-02-28 08:29:32,708 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 08:29:32,710 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 08:29:32,711 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 08:29:32,713 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 08:29:32,714 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-28 08:29:32,716 - INFO - env.py - _distribute_cards - 673 - ÕÊº“ 0  ÷≈∆ ['KS', '2H']£¨≥Ô¬Î $500
+2026-02-28 08:29:32,717 - INFO - env.py - _distribute_cards - 675 - ÕÊº“ 1  ÷≈∆ [??, ??]£¨≥Ô¬Î $500
+2026-02-28 08:29:32,719 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 08:29:32,720 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 08:29:32,722 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 08:29:32,727 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 08:29:33,191 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.RAISE_POT - Remaining stack: 496, Round pot: 6, Community pot: 0, player pot: 4
+2026-02-28 08:37:14,959 - INFO - main.py - command_line_parser - 54 - Initializing program
+2026-02-28 08:37:14,986 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 08:37:14,988 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 08:37:14,989 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 08:37:14,991 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 08:37:14,992 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-28 08:37:14,994 - INFO - env.py - _distribute_cards - 673 - ÕÊº“ 0  ÷≈∆ ['7D', 'TC']£¨≥Ô¬Î $500
+2026-02-28 08:37:14,995 - INFO - env.py - _distribute_cards - 675 - ÕÊº“ 1  ÷≈∆ [??, ??]£¨≥Ô¬Î $500
+2026-02-28 08:37:14,997 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 08:37:14,998 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 08:37:15,000 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 08:37:15,002 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 08:37:15,423 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.FOLD - Remaining stack: 499, Round pot: 3, Community pot: 0, player pot: 1
+2026-02-28 08:37:15,438 - INFO - env.py - _next_player - 609 - Only one player remaining in round
+2026-02-28 08:37:15,438 - INFO - env.py - _get_winner - 585 - Player 0 won: Only remaining player in round
+2026-02-28 08:37:15,438 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 08:37:15,438 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 08:37:15,438 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 08:37:15,438 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 08:37:15,438 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 1
+2026-02-28 08:37:15,438 - INFO - env.py - _distribute_cards - 673 - ÕÊº“ 0  ÷≈∆ ['AH', '8D']£¨≥Ô¬Î $501
+2026-02-28 08:37:15,438 - INFO - env.py - _distribute_cards - 675 - ÕÊº“ 1  ÷≈∆ [??, ??]£¨≥Ô¬Î $499
+2026-02-28 08:37:15,438 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 08:37:15,454 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 08:37:15,454 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.SMALL_BLIND - Remaining stack: 500, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 08:37:15,454 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.BIG_BLIND - Remaining stack: 497, Round pot: 3, Community pot: 0, player pot: 2

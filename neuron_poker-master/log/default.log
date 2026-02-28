@@ -1,0 +1,1105 @@
+2026-02-27 22:13:31,751 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:16:22,827 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:22:25,327 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:25:44,854 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:27:32,079 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:27:32,087 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-27 22:27:32,088 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-27 22:27:32,089 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-27 22:27:32,090 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-27 22:27:32,091 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-27 22:27:32,095 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['5S', 'TC'] and $500
+2026-02-27 22:27:32,096 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['KD', 'JC'] and $500
+2026-02-27 22:27:32,097 - INFO - env.py - _initiate_round - 504 - 
+2026-02-27 22:27:32,098 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-27 22:27:32,099 - INFO - env.py - _process_decision - 408 - Seat 1 (Keypress): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-27 22:27:32,099 - INFO - env.py - _process_decision - 408 - Seat 0 (Keypress): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-27 22:27:32,099 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:27:32,099 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:27:32,159 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:31:38,255 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:32:01,684 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:43:36,428 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:44:42,338 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:44:42,338 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-27 22:44:42,338 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-27 22:44:42,338 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-27 22:44:42,338 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-27 22:44:42,338 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-27 22:44:42,338 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['7C', '8H'] and $500
+2026-02-27 22:44:42,355 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['JS', 'JC'] and $500
+2026-02-27 22:44:42,355 - INFO - env.py - _initiate_round - 504 - 
+2026-02-27 22:44:42,355 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-27 22:44:42,355 - INFO - env.py - _process_decision - 408 - Seat 1 (Keypress): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-27 22:44:42,355 - INFO - env.py - _process_decision - 408 - Seat 0 (Keypress): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-27 22:44:42,355 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:44:42,355 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:44:42,425 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:45:49,480 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:45:49,489 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-27 22:45:49,490 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-27 22:45:49,491 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-27 22:45:49,492 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-27 22:45:49,493 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-27 22:45:49,494 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['TS', 'JS'] and $500
+2026-02-27 22:45:49,495 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['8S', '5C'] and $500
+2026-02-27 22:45:49,496 - INFO - env.py - _initiate_round - 504 - 
+2026-02-27 22:45:49,496 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-27 22:45:49,500 - INFO - env.py - _process_decision - 408 - Seat 1 (Keypress): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-27 22:45:49,502 - INFO - env.py - _process_decision - 408 - Seat 0 (Keypress): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-27 22:45:49,503 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:45:49,504 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:45:49,564 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:45:50,486 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 22:45:50,486 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:45:50,486 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:45:50,546 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:47:32,595 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:47:32,598 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-27 22:47:32,598 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-27 22:47:32,598 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-27 22:47:32,598 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-27 22:47:32,598 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-27 22:47:32,598 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['2H', 'TD'] and $500
+2026-02-27 22:47:32,598 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['9H', 'AS'] and $500
+2026-02-27 22:47:32,598 - INFO - env.py - _initiate_round - 504 - 
+2026-02-27 22:47:32,598 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-27 22:47:32,598 - INFO - env.py - _process_decision - 408 - Seat 1 (Keypress): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-27 22:47:32,598 - INFO - env.py - _process_decision - 408 - Seat 0 (Keypress): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-27 22:47:32,616 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:47:32,616 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:47:32,677 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:47:33,583 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 22:47:33,583 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:47:33,584 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:47:33,640 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:48:10,580 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:48:10,588 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-27 22:48:10,589 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-27 22:48:10,590 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-27 22:48:10,591 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-27 22:48:10,592 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-27 22:48:10,593 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['2S', '8D'] and $500
+2026-02-27 22:48:10,594 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['AD', 'TC'] and $500
+2026-02-27 22:48:10,594 - INFO - env.py - _initiate_round - 504 - 
+2026-02-27 22:48:10,599 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-27 22:48:10,600 - INFO - env.py - _process_decision - 408 - Seat 1 (Keypress): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-27 22:48:10,601 - INFO - env.py - _process_decision - 408 - Seat 0 (Keypress): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-27 22:48:10,602 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:48:10,603 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:48:10,661 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:48:10,662 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 22:48:10,662 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:48:10,663 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:48:10,722 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:49:48,087 - INFO - env.py - _process_decision - 408 - Seat 1 (Keypress): Action.CALL - Remaining stack: 498, Round pot: 4, Community pot: 0, player pot: 2
+2026-02-27 22:49:48,089 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 4
+2026-02-27 22:49:48,089 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:49:48,148 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 4
+2026-02-27 22:49:48,149 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 22:49:48,149 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 4
+2026-02-27 22:49:48,150 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:49:48,206 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 4
+2026-02-27 22:50:28,392 - INFO - env.py - _process_decision - 408 - Seat 0 (Keypress): Action.CHECK - Remaining stack: 498, Round pot: 4, Community pot: 0, player pot: 2
+2026-02-27 22:50:28,392 - DEBUG - cycle.py - next_player - 82 - max steps after raiser has been reached
+2026-02-27 22:50:28,392 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:50:28,392 - INFO - env.py - _distribute_cards_to_table - 677 - Cards on table: ['TH', 'TS', '3C']
+2026-02-27 22:50:28,392 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:50:28,392 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.FLOP ===
+2026-02-27 22:50:28,392 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 8
+2026-02-27 22:50:28,392 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:50:28,448 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 8
+2026-02-27 22:50:28,449 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 22:50:28,449 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 8
+2026-02-27 22:50:28,450 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:50:28,500 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 8
+2026-02-27 22:52:13,305 - INFO - env.py - _process_decision - 408 - Seat 0 (Keypress): Action.RAISE_POT - Remaining stack: 490, Round pot: 8, Community pot: 8, player pot: 8
+2026-02-27 22:52:13,322 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 16
+2026-02-27 22:52:13,323 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:52:13,372 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 16
+2026-02-27 22:52:13,372 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 22:52:13,372 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 16
+2026-02-27 22:52:13,372 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:52:13,421 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 16
+2026-02-27 22:52:25,402 - INFO - env.py - _process_decision - 408 - Seat 1 (Keypress): Action.CALL - Remaining stack: 490, Round pot: 16, Community pot: 8, player pot: 8
+2026-02-27 22:52:25,406 - INFO - cycle.py - next_player - 74 - Max steps without raising has been reached. For example all calls after raiser.
+2026-02-27 22:52:25,407 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:52:25,407 - INFO - env.py - _distribute_cards_to_table - 677 - Cards on table: ['TH', 'TS', '3C', '5H']
+2026-02-27 22:52:25,408 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:52:25,409 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.TURN ===
+2026-02-27 22:52:25,410 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 40
+2026-02-27 22:52:25,410 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:52:25,458 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 40
+2026-02-27 22:52:25,459 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 22:52:25,459 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 40
+2026-02-27 22:52:25,460 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:52:25,509 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 40
+2026-02-27 22:52:35,400 - INFO - env.py - _process_decision - 408 - Seat 0 (Keypress): Action.CHECK - Remaining stack: 490, Round pot: 0, Community pot: 40, player pot: 0
+2026-02-27 22:52:35,402 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 40
+2026-02-27 22:52:35,403 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:52:35,451 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 40
+2026-02-27 22:52:35,451 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 22:52:35,452 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 40
+2026-02-27 22:52:35,453 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:52:35,502 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 40
+2026-02-27 22:53:00,662 - INFO - env.py - _process_decision - 408 - Seat 1 (Keypress): Action.RAISE_POT - Remaining stack: 450, Round pot: 40, Community pot: 40, player pot: 40
+2026-02-27 22:53:00,664 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 80
+2026-02-27 22:53:00,665 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:53:00,714 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 80
+2026-02-27 22:53:00,715 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 22:53:00,715 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 80
+2026-02-27 22:53:00,716 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:53:00,763 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 80
+2026-02-27 22:53:04,777 - INFO - env.py - _process_decision - 408 - Seat 0 (Keypress): Action.CALL - Remaining stack: 450, Round pot: 80, Community pot: 40, player pot: 40
+2026-02-27 22:53:04,779 - INFO - cycle.py - next_player - 74 - Max steps without raising has been reached. For example all calls after raiser.
+2026-02-27 22:53:04,781 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:53:04,782 - INFO - env.py - _distribute_cards_to_table - 677 - Cards on table: ['TH', 'TS', '3C', '5H', 'KH']
+2026-02-27 22:53:04,783 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:53:04,784 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.RIVER ===
+2026-02-27 22:53:04,785 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 200
+2026-02-27 22:53:04,785 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:53:04,833 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 200
+2026-02-27 22:53:04,834 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 22:53:04,834 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 200
+2026-02-27 22:53:04,835 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:53:04,880 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 200
+2026-02-27 22:54:19,784 - INFO - main.py - command_line_parser - 55 - Initializing program
+2026-02-27 22:54:19,804 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-27 22:54:19,805 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-27 22:54:19,806 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-27 22:54:19,808 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-27 22:54:19,809 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-27 22:54:19,810 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['4D', '5S'] and $500
+2026-02-27 22:54:19,811 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['6C', 'KS'] and $500
+2026-02-27 22:54:19,812 - INFO - env.py - _distribute_cards - 671 - Player 2 got ['6D', 'JC'] and $500
+2026-02-27 22:54:19,813 - INFO - env.py - _distribute_cards - 671 - Player 3 got ['9H', '9D'] and $500
+2026-02-27 22:54:19,813 - INFO - env.py - _distribute_cards - 671 - Player 4 got ['AH', '8D'] and $500
+2026-02-27 22:54:19,814 - INFO - env.py - _distribute_cards - 671 - Player 5 got ['8S', 'TH'] and $500
+2026-02-27 22:54:19,818 - INFO - env.py - _initiate_round - 504 - 
+2026-02-27 22:54:19,819 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-27 22:54:19,820 - INFO - env.py - _process_decision - 408 - Seat 1 (equity/50/80): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-27 22:54:19,821 - INFO - env.py - _process_decision - 408 - Seat 2 (equity/70/70): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-27 22:54:19,822 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:54:19,823 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:54:19,942 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:54:20,901 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 22:54:20,901 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:54:20,903 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:54:21,021 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:54:21,100 - INFO - env.py - _process_decision - 408 - Seat 3 (equity/20/30): Action.ALL_IN - Remaining stack: 0, Round pot: 503, Community pot: 0, player pot: 500
+2026-02-27 22:54:21,101 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 503
+2026-02-27 22:54:21,102 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:54:21,221 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 503
+2026-02-27 22:54:21,300 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 22:54:21,301 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 503
+2026-02-27 22:54:21,301 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:54:21,421 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 503
+2026-02-27 22:54:21,484 - INFO - env.py - _process_decision - 408 - Seat 4 (Random): Action.FOLD - Remaining stack: 500, Round pot: 503, Community pot: 0, player pot: 0
+2026-02-27 22:54:21,485 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 503
+2026-02-27 22:54:21,486 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:54:21,591 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 503
+2026-02-27 22:54:21,666 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 22:54:21,667 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 503
+2026-02-27 22:54:21,667 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:54:21,772 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 503
+2026-02-27 22:54:21,835 - INFO - env.py - _process_decision - 408 - Seat 5 (Random): Action.FOLD - Remaining stack: 500, Round pot: 503, Community pot: 0, player pot: 0
+2026-02-27 22:54:21,836 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 503
+2026-02-27 22:54:21,836 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:54:21,926 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 503
+2026-02-27 22:54:22,000 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 22:54:22,001 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 503
+2026-02-27 22:54:22,002 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:54:22,092 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 503
+2026-02-27 22:54:22,218 - INFO - env.py - _process_decision - 408 - Seat 0 (equity/50/50): Action.ALL_IN - Remaining stack: 0, Round pot: 1003, Community pot: 0, player pot: 500
+2026-02-27 22:54:22,218 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 1003
+2026-02-27 22:54:22,218 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:54:22,309 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 1003
+2026-02-27 22:54:22,383 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 22:54:22,384 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 1003
+2026-02-27 22:54:22,384 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:54:22,474 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 1003
+2026-02-27 22:54:22,551 - INFO - env.py - _process_decision - 408 - Seat 1 (equity/50/80): Action.ALL_IN - Remaining stack: 0, Round pot: 1502, Community pot: 0, player pot: 500
+2026-02-27 22:54:22,552 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 1502
+2026-02-27 22:54:22,552 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:54:22,641 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 1502
+2026-02-27 22:54:22,716 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 22:54:22,717 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 1502
+2026-02-27 22:54:22,718 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:54:22,800 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 1502
+2026-02-27 22:54:22,866 - INFO - env.py - _process_decision - 408 - Seat 2 (equity/70/70): Action.ALL_IN - Remaining stack: 0, Round pot: 2000, Community pot: 0, player pot: 500
+2026-02-27 22:54:22,866 - INFO - cycle.py - next_player - 74 - Max steps without raising has been reached. For example all calls after raiser.
+2026-02-27 22:54:22,866 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:54:22,866 - INFO - env.py - _distribute_cards_to_table - 677 - Cards on table: ['9S', '5H', 'QH']
+2026-02-27 22:54:22,866 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:54:22,866 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.FLOP ===
+2026-02-27 22:54:22,866 - DEBUG - cycle.py - next_player - 97 - Max steps total has been reached after jumping some folders
+2026-02-27 22:54:22,866 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:54:22,866 - INFO - env.py - _distribute_cards_to_table - 677 - Cards on table: ['9S', '5H', 'QH', '3H']
+2026-02-27 22:54:22,866 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:54:22,866 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.TURN ===
+2026-02-27 22:54:22,866 - DEBUG - cycle.py - next_player - 97 - Max steps total has been reached after jumping some folders
+2026-02-27 22:54:22,866 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:54:22,866 - INFO - env.py - _distribute_cards_to_table - 677 - Cards on table: ['9S', '5H', 'QH', '3H', '4C']
+2026-02-27 22:54:22,866 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:54:22,866 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.RIVER ===
+2026-02-27 22:54:22,866 - DEBUG - cycle.py - next_player - 97 - Max steps total has been reached after jumping some folders
+2026-02-27 22:54:22,882 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:54:22,885 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:54:22,885 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.SHOWDOWN ===
+2026-02-27 22:54:22,885 - INFO - env.py - _initiate_round - 521 - Showdown
+2026-02-27 22:54:22,885 - INFO - env.py - _get_winner - 585 - Player 3 won: ThreeOfAKind
+2026-02-27 22:54:22,885 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-27 22:54:22,885 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-27 22:54:22,885 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-27 22:54:22,885 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-27 22:54:22,885 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 3
+2026-02-27 22:54:22,885 - INFO - env.py - _distribute_cards - 671 - Player 3 got ['9H', 'AS'] and $2000
+2026-02-27 22:54:22,885 - INFO - env.py - _distribute_cards - 671 - Player 4 got ['3H', 'TS'] and $500
+2026-02-27 22:54:22,885 - INFO - env.py - _distribute_cards - 671 - Player 5 got ['3S', '4C'] and $500
+2026-02-27 22:54:22,885 - INFO - env.py - _initiate_round - 504 - 
+2026-02-27 22:54:22,885 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-27 22:54:22,900 - INFO - env.py - _process_decision - 408 - Seat 4 (Random): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-27 22:54:22,903 - INFO - env.py - _process_decision - 408 - Seat 5 (Random): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-27 22:54:22,904 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:54:22,904 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:54:22,978 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:54:23,035 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 22:54:23,035 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:54:23,036 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:54:23,110 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 22:54:23,167 - INFO - env.py - _process_decision - 408 - Seat 3 (equity/20/30): Action.ALL_IN - Remaining stack: 0, Round pot: 2003, Community pot: 0, player pot: 2000
+2026-02-27 22:54:23,169 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 2003
+2026-02-27 22:54:23,169 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:54:23,245 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 2003
+2026-02-27 22:54:23,318 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 22:54:23,318 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 2003
+2026-02-27 22:54:23,319 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:54:23,393 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 2003
+2026-02-27 22:54:23,450 - INFO - env.py - _process_decision - 408 - Seat 4 (Random): Action.CALL - Remaining stack: 0, Round pot: 2502, Community pot: 0, player pot: 500
+2026-02-27 22:54:23,452 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 2502
+2026-02-27 22:54:23,452 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:54:23,529 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 2502
+2026-02-27 22:54:23,600 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 22:54:23,601 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 2502
+2026-02-27 22:54:23,601 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 22:54:23,675 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 2502
+2026-02-27 22:54:23,733 - INFO - env.py - _process_decision - 408 - Seat 5 (Random): Action.CALL - Remaining stack: 0, Round pot: 3000, Community pot: 0, player pot: 500
+2026-02-27 22:54:23,733 - DEBUG - cycle.py - next_player - 97 - Max steps total has been reached after jumping some folders
+2026-02-27 22:54:23,733 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:54:23,733 - INFO - env.py - _distribute_cards_to_table - 677 - Cards on table: ['KD', '8S', '5S']
+2026-02-27 22:54:23,733 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:54:23,733 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.FLOP ===
+2026-02-27 22:54:23,733 - DEBUG - cycle.py - next_player - 97 - Max steps total has been reached after jumping some folders
+2026-02-27 22:54:23,733 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:54:23,733 - INFO - env.py - _distribute_cards_to_table - 677 - Cards on table: ['KD', '8S', '5S', '8H']
+2026-02-27 22:54:23,733 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:54:23,733 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.TURN ===
+2026-02-27 22:54:23,733 - DEBUG - cycle.py - next_player - 97 - Max steps total has been reached after jumping some folders
+2026-02-27 22:54:23,733 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:54:23,733 - INFO - env.py - _distribute_cards_to_table - 677 - Cards on table: ['KD', '8S', '5S', '8H', '9C']
+2026-02-27 22:54:23,733 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:54:23,733 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.RIVER ===
+2026-02-27 22:54:23,733 - DEBUG - cycle.py - next_player - 97 - Max steps total has been reached after jumping some folders
+2026-02-27 22:54:23,733 - INFO - env.py - _next_player - 612 - End round - no current player returned
+2026-02-27 22:54:23,751 - INFO - env.py - _end_round - 555 - --------------------------------
+2026-02-27 22:54:23,751 - INFO - env.py - _end_round - 556 - ===ROUND: Stage.SHOWDOWN ===
+2026-02-27 22:54:23,751 - INFO - env.py - _initiate_round - 521 - Showdown
+2026-02-27 22:54:23,751 - INFO - env.py - _get_winner - 585 - Player 3 won: TwoPair
+2026-02-27 22:54:23,751 - INFO - env.py - _game_over - 473 - Game over.
+2026-02-27 22:54:24,055 - DEBUG - pyplot.py - switch_backend - 487 - Loaded backend tkagg version 8.6.
+2026-02-27 22:54:24,584 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'IHDR' 16 13
+2026-02-27 22:54:24,584 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'sBIT' 41 4
+2026-02-27 22:54:24,584 - DEBUG - PngImagePlugin.py - _open - 781 - b'sBIT' 41 4 (unknown)
+2026-02-27 22:54:24,584 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'pHYs' 57 9
+2026-02-27 22:54:24,584 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'IDAT' 78 1189
+2026-02-27 22:54:24,633 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'IHDR' 16 13
+2026-02-27 22:54:24,633 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'sBIT' 41 4
+2026-02-27 22:54:24,633 - DEBUG - PngImagePlugin.py - _open - 781 - b'sBIT' 41 4 (unknown)
+2026-02-27 22:54:24,633 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'pHYs' 57 9
+2026-02-27 22:54:24,633 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'IDAT' 78 2994
+2026-02-27 22:54:24,719 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'IHDR' 16 13
+2026-02-27 22:54:24,719 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'sBIT' 41 4
+2026-02-27 22:54:24,720 - DEBUG - PngImagePlugin.py - _open - 781 - b'sBIT' 41 4 (unknown)
+2026-02-27 22:54:24,720 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'pHYs' 57 9
+2026-02-27 22:54:24,721 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'IDAT' 78 696
+2026-02-27 22:54:24,728 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'IHDR' 16 13
+2026-02-27 22:54:24,728 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'sBIT' 41 4
+2026-02-27 22:54:24,729 - DEBUG - PngImagePlugin.py - _open - 781 - b'sBIT' 41 4 (unknown)
+2026-02-27 22:54:24,729 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'pHYs' 57 9
+2026-02-27 22:54:24,729 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'IDAT' 78 526
+2026-02-27 22:54:24,738 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'IHDR' 16 13
+2026-02-27 22:54:24,738 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'sBIT' 41 4
+2026-02-27 22:54:24,739 - DEBUG - PngImagePlugin.py - _open - 781 - b'sBIT' 41 4 (unknown)
+2026-02-27 22:54:24,739 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'pHYs' 57 9
+2026-02-27 22:54:24,740 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'IDAT' 78 499
+2026-02-27 22:54:24,746 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'IHDR' 16 13
+2026-02-27 22:54:24,746 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'sBIT' 41 4
+2026-02-27 22:54:24,747 - DEBUG - PngImagePlugin.py - _open - 781 - b'sBIT' 41 4 (unknown)
+2026-02-27 22:54:24,747 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'pHYs' 57 9
+2026-02-27 22:54:24,748 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'IDAT' 78 673
+2026-02-27 22:54:24,755 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'IHDR' 16 13
+2026-02-27 22:54:24,756 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'sBIT' 41 4
+2026-02-27 22:54:24,756 - DEBUG - PngImagePlugin.py - _open - 781 - b'sBIT' 41 4 (unknown)
+2026-02-27 22:54:24,757 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'pHYs' 57 9
+2026-02-27 22:54:24,757 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'IDAT' 78 922
+2026-02-27 22:54:24,764 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'IHDR' 16 13
+2026-02-27 22:54:24,765 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'sBIT' 41 4
+2026-02-27 22:54:24,765 - DEBUG - PngImagePlugin.py - _open - 781 - b'sBIT' 41 4 (unknown)
+2026-02-27 22:54:24,766 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'pHYs' 57 9
+2026-02-27 22:54:24,767 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'IDAT' 78 568
+2026-02-27 22:54:24,774 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'IHDR' 16 13
+2026-02-27 22:54:24,774 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'sBIT' 41 4
+2026-02-27 22:54:24,775 - DEBUG - PngImagePlugin.py - _open - 781 - b'sBIT' 41 4 (unknown)
+2026-02-27 22:54:24,775 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'pHYs' 57 9
+2026-02-27 22:54:24,775 - DEBUG - PngImagePlugin.py - call - 201 - STREAM b'IDAT' 78 626
+2026-02-27 22:54:24,789 - DEBUG - font_manager.py - _findfont_cached - 1416 - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+2026-02-27 22:54:24,790 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXGeneral.ttf', name='STIXGeneral', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,790 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSansMono-Bold.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,790 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Bold.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 0.33499999999999996
+2026-02-27 22:54:24,791 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXNonUniIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,791 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXNonUniBolIta.ttf', name='STIXNonUnicode', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,792 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmsy10.ttf', name='cmsy10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,792 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSansDisplay.ttf', name='DejaVu Sans Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,793 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSerif-Italic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,793 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmtt10.ttf', name='cmtt10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,794 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSerif-Bold.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,794 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXGeneralBol.ttf', name='STIXGeneral', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,795 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSansMono-Oblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,795 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSansMono.ttf', name='DejaVu Sans Mono', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,795 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXGeneralBolIta.ttf', name='STIXGeneral', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,796 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizThreeSymBol.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,796 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSerif-BoldItalic.ttf', name='DejaVu Serif', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,796 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizOneSymBol.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,798 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXGeneralItalic.ttf', name='STIXGeneral', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,798 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmex10.ttf', name='cmex10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,799 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizTwoSymReg.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,799 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizFourSymBol.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,800 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf', name='DejaVu Sans', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 0.05
+2026-02-27 22:54:24,800 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmmi10.ttf', name='cmmi10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,801 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-Oblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=400, stretch='normal', size='scalable')) = 1.05
+2026-02-27 22:54:24,801 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizFiveSymReg.ttf', name='STIXSizeFiveSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,801 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmr10.ttf', name='cmr10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,801 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizTwoSymBol.ttf', name='STIXSizeTwoSym', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,802 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSerif.ttf', name='DejaVu Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,802 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmb10.ttf', name='cmb10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,802 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSansMono-BoldOblique.ttf', name='DejaVu Sans Mono', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,803 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizThreeSymReg.ttf', name='STIXSizeThreeSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,803 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizOneSymReg.ttf', name='STIXSizeOneSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,804 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\cmss10.ttf', name='cmss10', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,804 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans-BoldOblique.ttf', name='DejaVu Sans', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 1.335
+2026-02-27 22:54:24,805 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXNonUni.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,805 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSerifDisplay.ttf', name='DejaVu Serif Display', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,806 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXSizFourSymReg.ttf', name='STIXSizeFourSym', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,806 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\STIXNonUniBol.ttf', name='STIXNonUnicode', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,806 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MyriadPro-SemiboldIt.otf', name='Myriad Pro', style='italic', variant='normal', weight=600, stretch='normal', size='scalable')) = 11.24
+2026-02-27 22:54:24,807 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\NuevaStd-Bold.otf', name='Nueva Std', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,807 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozGoPr6N-Light.otf', name='Kozuka Gothic Pr6N', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,808 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LeelaUIb.ttf', name='Leelawadee UI', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,808 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozMinPro-Light.otf', name='Kozuka Mincho Pro', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,809 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segoeuisl.ttf', name='Segoe UI', style='normal', variant='normal', weight=350, stretch='normal', size='scalable')) = 10.0975
+2026-02-27 22:54:24,809 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\NuevaStd-Italic.otf', name='Nueva Std', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,809 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MesquiteStd.otf', name='Mesquite Std', style='normal', variant='normal', weight=500, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,810 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BRUSHSCI.TTF', name='Brush Script MT', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,810 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LBRITE.TTF', name='Lucida Bright', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,811 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LFAXD.TTF', name='Lucida Fax', style='normal', variant='normal', weight=600, stretch='normal', size='scalable')) = 10.24
+2026-02-27 22:54:24,811 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MyriadHebrew-It.otf', name='Myriad Hebrew', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,812 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\seguiemj.ttf', name='Segoe UI Emoji', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,812 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MTCORSVA.TTF', name='Monotype Corsiva', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,813 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Dengb.ttf', name='DengXian', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,813 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\javatext.ttf', name='Javanese Text', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,814 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\TrajanPro-Bold.otf', name='Trajan Pro', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,814 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\STCAIYUN.TTF', name='STCaiyun', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,815 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeArabic-Italic.otf', name='Adobe Arabic', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,815 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\CENTURY.TTF', name='Century', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,816 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\msjh.ttc', name='Microsoft JhengHei', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,816 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\comici.ttf', name='Comic Sans MS', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,817 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SourceSansPro-SemiboldIt.otf', name='Source Sans Pro', style='italic', variant='normal', weight=600, stretch='normal', size='scalable')) = 11.24
+2026-02-27 22:54:24,817 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\seguili.ttf', name='Segoe UI', style='italic', variant='normal', weight=300, stretch='normal', size='scalable')) = 11.145
+2026-02-27 22:54:24,818 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\constanz.ttf', name='Constantia', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,818 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segoeuib.ttf', name='Segoe UI', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,819 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ARIALNBI.TTF', name='Arial', style='italic', variant='normal', weight=700, stretch='condensed', size='scalable')) = 7.8986363636363635
+2026-02-27 22:54:24,819 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SourceSansPro-Bold.otf', name='Source Sans Pro', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,820 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Candara.ttf', name='Candara', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,820 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\comic.ttf', name='Comic Sans MS', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,821 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\STLITI.TTF', name='STLiti', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,821 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\himalaya.ttf', name='Microsoft Himalaya', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,822 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LetterGothicStd.otf', name='Letter Gothic Std', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,822 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\OLDENGL.TTF', name='Old English Text MT', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,823 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LetterGothicStd-BoldSlanted.otf', name='Letter Gothic Std', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,823 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\timesi.ttf', name='Times New Roman', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,823 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\NuevaStd-Cond.otf', name='Nueva Std', style='normal', variant='normal', weight=400, stretch='condensed', size='scalable')) = 10.25
+2026-02-27 22:54:24,824 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\HARNGTON.TTF', name='Harrington', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,824 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BirchStd.otf', name='Birch Std', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,825 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\CharlemagneStd-Bold.otf', name='Charlemagne Std', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,825 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozMinPr6N-Light.otf', name='Kozuka Mincho Pr6N', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,826 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\corbeli.ttf', name='Corbel', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,826 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\gadugi.ttf', name='Gadugi', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,827 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LeelUIsl.ttf', name='Leelawadee UI', style='normal', variant='normal', weight=350, stretch='normal', size='scalable')) = 10.0975
+2026-02-27 22:54:24,827 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MinionPro-SemiboldIt.otf', name='Minion Pro', style='italic', variant='normal', weight=600, stretch='normal', size='scalable')) = 11.24
+2026-02-27 22:54:24,828 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozMinPro-ExtraLight.otf', name='Kozuka Mincho Pro', style='normal', variant='normal', weight=250, stretch='normal', size='scalable')) = 10.1925
+2026-02-27 22:54:24,828 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BERNHC.TTF', name='Bernard MT Condensed', style='normal', variant='normal', weight=400, stretch='condensed', size='scalable')) = 10.25
+2026-02-27 22:54:24,828 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozMinPr6N-Regular.otf', name='Kozuka Mincho Pr6N', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,829 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\WINGDNG2.TTF', name='Wingdings 2', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,829 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\YuGothM.ttc', name='Yu Gothic', style='normal', variant='normal', weight=500, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,830 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeGothicStd-Bold.otf', name='Adobe Gothic Std', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,830 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\TrajanPro3-Bold.otf', name='Trajan Pro 3', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,831 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\lucon.ttf', name='Lucida Console', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,831 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\CALIFR.TTF', name='Californian FB', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,832 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Candarab.ttf', name='Candara', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,832 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ntailu.ttf', name='Microsoft New Tai Lue', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,833 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\arialbd.ttf', name='Arial', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 6.698636363636363
+2026-02-27 22:54:24,834 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\cambriai.ttf', name='Cambria', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,834 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\OratorStd-Slanted.otf', name='Orator Std', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,835 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozGoPr6N-Heavy.otf', name='Kozuka Gothic Pr6N', style='normal', variant='normal', weight=900, stretch='normal', size='scalable')) = 10.525
+2026-02-27 22:54:24,835 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\GOTHICI.TTF', name='Century Gothic', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,835 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\corbelz.ttf', name='Corbel', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,836 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\TektonPro-BoldObl.otf', name='Tekton Pro', style='oblique', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,836 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segoeui.ttf', name='Segoe UI', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,837 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\CooperBlackStd.otf', name='Cooper Std', style='normal', variant='normal', weight=900, stretch='normal', size='scalable')) = 10.525
+2026-02-27 22:54:24,837 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozMinPro-Medium.otf', name='Kozuka Mincho Pro', style='normal', variant='normal', weight=500, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,838 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeKaitiStd-Regular.otf', name='Adobe Kaiti Std', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,838 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\NuevaStd-BoldCondItalic.otf', name='Nueva Std', style='italic', variant='normal', weight=700, stretch='condensed', size='scalable')) = 11.535
+2026-02-27 22:54:24,838 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\times.ttf', name='Times New Roman', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,839 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BRITANIC.TTF', name='Britannic Bold', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,839 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\verdanai.ttf', name='Verdana', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 4.6863636363636365
+2026-02-27 22:54:24,840 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MinionPro-Semibold.otf', name='Minion Pro', style='normal', variant='normal', weight=600, stretch='normal', size='scalable')) = 10.24
+2026-02-27 22:54:24,840 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\NirmalaS.ttf', name='Nirmala UI', style='normal', variant='normal', weight=350, stretch='normal', size='scalable')) = 10.0975
+2026-02-27 22:54:24,841 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ACaslonPro-SemiboldItalic.otf', name='Adobe Caslon Pro', style='italic', variant='normal', weight=600, stretch='normal', size='scalable')) = 11.24
+2026-02-27 22:54:24,841 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeFangsongStd-Regular.otf', name='Adobe Fangsong Std', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,842 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeGurmukhi-Regular.otf', name='Adobe Gurmukhi', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,842 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\taileb.ttf', name='Microsoft Tai Le', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,842 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ChaparralPro-Regular.otf', name='Chaparral Pro', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,843 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\NIAGSOL.TTF', name='Niagara Solid', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,843 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\corbell.ttf', name='Corbel', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,844 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Candarai.ttf', name='Candara', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,844 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\GOTHICB.TTF', name='Century Gothic', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,845 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\STZHONGS.TTF', name='STZhongsong', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,845 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\Windows\\Fonts\\∂˛’Ω∞Ê≥ı¥Œ π”√«Îœ¬‘ÿ±æ◊÷ÃÂ.ttf', name='DFPOP2W9-GB', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,846 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\CALIFI.TTF', name='Californian FB', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,846 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segoepr.ttf', name='Segoe Print', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,847 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozMinPr6N-Medium.otf', name='Kozuka Mincho Pr6N', style='normal', variant='normal', weight=500, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,847 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozMinPro-Bold.otf', name='Kozuka Mincho Pro', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,847 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\PARCHM.TTF', name='Parchment', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,848 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\RosewoodStd-Regular.otf', name='Rosewood Std', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,848 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\georgiab.ttf', name='Georgia', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,849 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ariblk.ttf', name='Arial', style='normal', variant='normal', weight=900, stretch='normal', size='scalable')) = 6.888636363636364
+2026-02-27 22:54:24,850 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\DINNextLTPro-Medium.ttf', name='DIN Next LT Pro', style='normal', variant='normal', weight=500, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,850 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\VIVALDII.TTF', name='Vivaldi', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,851 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\NirmalaB.ttf', name='Nirmala UI', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,851 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BRLNSR.TTF', name='Berlin Sans FB', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,852 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\micross.ttf', name='Microsoft Sans Serif', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,852 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozMinPr6N-Heavy.otf', name='Kozuka Mincho Pr6N', style='normal', variant='normal', weight=900, stretch='normal', size='scalable')) = 10.525
+2026-02-27 22:54:24,852 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SourceSansPro-Black.otf', name='Source Sans Pro', style='normal', variant='normal', weight=900, stretch='normal', size='scalable')) = 10.525
+2026-02-27 22:54:24,853 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BRLNSB.TTF', name='Berlin Sans FB', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,853 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\taile.ttf', name='Microsoft Tai Le', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,854 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\GOTHIC.TTF', name='Century Gothic', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,854 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Nirmala.ttf', name='Nirmala UI', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,855 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeMingStd-Light.otf', name='Adobe Ming Std', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,855 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\msjhbd.ttc', name='Microsoft JhengHei', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,856 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\arialbi.ttf', name='Arial', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 7.698636363636363
+2026-02-27 22:54:24,856 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BOD_PSTC.TTF', name='Bodoni MT', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,857 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\palai.ttf', name='Palatino Linotype', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,857 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\impact.ttf', name='Impact', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,857 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\TektonPro-BoldCond.otf', name='Tekton Pro', style='normal', variant='normal', weight=700, stretch='condensed', size='scalable')) = 10.535
+2026-02-27 22:54:24,858 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\IQYHT-Black.ttf', name='IQYHT', style='normal', variant='normal', weight=900, stretch='normal', size='scalable')) = 10.525
+2026-02-27 22:54:24,858 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\courbd.ttf', name='Courier New', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,859 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeDevanagari-Regular.otf', name='Adobe Devanagari', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,859 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segoeuil.ttf', name='Segoe UI', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,860 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\FZYTK.TTF', name='FZYaoTi', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,860 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\framd.ttf', name='Franklin Gothic Medium', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,861 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozMinPro-Heavy.otf', name='Kozuka Mincho Pro', style='normal', variant='normal', weight=900, stretch='normal', size='scalable')) = 10.525
+2026-02-27 22:54:24,861 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\CooperBlackStd-Italic.otf', name='Cooper Std', style='italic', variant='normal', weight=900, stretch='normal', size='scalable')) = 11.525
+2026-02-27 22:54:24,861 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segoeuiz.ttf', name='Segoe UI', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,862 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LFAX.TTF', name='Lucida Fax', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,862 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeGurmukhi-Bold.otf', name='Adobe Gurmukhi', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,863 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\DINNextLTPro-Regular.ttf', name='DIN Next LT Pro', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,863 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MAGNETOB.TTF', name='Magneto', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,864 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\StencilStd.otf', name='Stencil Std', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,864 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segoeuii.ttf', name='Segoe UI', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,865 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\timesbi.ttf', name='Times New Roman', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,865 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeNaskh-Medium.otf', name='Adobe Naskh', style='normal', variant='normal', weight=500, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,865 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segoeprb.ttf', name='Segoe Print', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,866 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MISTRAL.TTF', name='Mistral', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,866 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\STENCIL.TTF', name='Stencil', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,867 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\sylfaen.ttf', name='Sylfaen', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,867 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\FZSTK.TTF', name='FZShuTi', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,868 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\FTLTLT.TTF', name='Footlight MT Light', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,868 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SitkaI.ttc', name='Sitka Small', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,869 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SourceSansPro-ExtraLight.otf', name='Source Sans Pro', style='normal', variant='normal', weight=200, stretch='normal', size='scalable')) = 10.24
+2026-02-27 22:54:24,869 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\arial.ttf', name='Arial', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 6.413636363636363
+2026-02-27 22:54:24,870 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LCALLIG.TTF', name='Lucida Calligraphy', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,870 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\msyi.ttf', name='Microsoft Yi Baiti', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,870 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\NIAGENG.TTF', name='Niagara Engraved', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,871 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\phagspa.ttf', name='Microsoft PhagsPa', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,871 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ACaslonPro-Bold.otf', name='Adobe Caslon Pro', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,872 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SourceSansPro-LightIt.otf', name='Source Sans Pro', style='italic', variant='normal', weight=300, stretch='normal', size='scalable')) = 11.145
+2026-02-27 22:54:24,872 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\georgiai.ttf', name='Georgia', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,873 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\bahnschrift.ttf', name='Bahnschrift', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,873 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ARIALN.TTF', name='Arial', style='normal', variant='normal', weight=400, stretch='condensed', size='scalable')) = 6.613636363636363
+2026-02-27 22:54:24,874 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\RAVIE.TTF', name='Ravie', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,874 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\TEMPSITC.TTF', name='Tempus Sans ITC', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,875 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\palab.ttf', name='Palatino Linotype', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,875 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeHebrew-Italic.otf', name='Adobe Hebrew', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,875 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segoesc.ttf', name='Segoe Script', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,876 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\monbaiti.ttf', name='Mongolian Baiti', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,876 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\tahoma.ttf', name='Tahoma', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,877 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ChaparralPro-BoldIt.otf', name='Chaparral Pro', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,877 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LFAXI.TTF', name='Lucida Fax', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,878 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\HTOWERT.TTF', name='High Tower Text', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,878 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\malgun.ttf', name='Malgun Gothic', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,879 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\GARA.TTF', name='Garamond', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,879 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\TrajanPro3-Regular.otf', name='Trajan Pro 3', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,879 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\WINGDNG3.TTF', name='Wingdings 3', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,880 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\STHUPO.TTF', name='STHupo', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,880 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozGoPro-Heavy.otf', name='Kozuka Gothic Pro', style='normal', variant='normal', weight=900, stretch='normal', size='scalable')) = 10.525
+2026-02-27 22:54:24,881 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SourceSansPro-Light.otf', name='Source Sans Pro', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,881 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeHebrew-BoldItalic.otf', name='Adobe Hebrew', style='italic', variant='normal', weight=600, stretch='normal', size='scalable')) = 11.24
+2026-02-27 22:54:24,882 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\trebucbi.ttf', name='Trebuchet MS', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,882 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\NuevaStd-BoldCond.otf', name='Nueva Std', style='normal', variant='normal', weight=700, stretch='condensed', size='scalable')) = 10.535
+2026-02-27 22:54:24,882 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\georgia.ttf', name='Georgia', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,883 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BOOKOSBI.TTF', name='Bookman Old Style', style='italic', variant='normal', weight=600, stretch='normal', size='scalable')) = 11.24
+2026-02-27 22:54:24,883 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\seguisbi.ttf', name='Segoe UI', style='italic', variant='normal', weight=600, stretch='normal', size='scalable')) = 11.24
+2026-02-27 22:54:24,884 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AGaramondPro-Regular.otf', name='Adobe Garamond Pro', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,884 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\corbel.ttf', name='Corbel', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,885 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SitkaZ.ttc', name='Sitka Small', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,885 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\GOTHICBI.TTF', name='Century Gothic', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,886 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BrushScriptStd.otf', name='Brush Script Std', style='normal', variant='normal', weight=500, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,886 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeArabic-Regular.otf', name='Adobe Arabic', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,886 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\seguibl.ttf', name='Segoe UI', style='normal', variant='normal', weight=900, stretch='normal', size='scalable')) = 10.525
+2026-02-27 22:54:24,887 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BOOKOS.TTF', name='Bookman Old Style', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,887 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Dengl.ttf', name='DengXian', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,888 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\timesbd.ttf', name='Times New Roman', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,888 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\msgothic.ttc', name='MS Gothic', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,889 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\corbelli.ttf', name='Corbel', style='italic', variant='normal', weight=300, stretch='normal', size='scalable')) = 11.145
+2026-02-27 22:54:24,889 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\simhei.ttf', name='SimHei', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,890 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\OCRAStd.otf', name='OCR A Std', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,890 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\GARAIT.TTF', name='Garamond', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,891 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\seguisli.ttf', name='Segoe UI', style='italic', variant='normal', weight=350, stretch='normal', size='scalable')) = 11.0975
+2026-02-27 22:54:24,891 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\consola.ttf', name='Consolas', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,891 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozGoPr6N-Regular.otf', name='Kozuka Gothic Pr6N', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,892 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ARIALUNI.TTF', name='Arial Unicode MS', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,892 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozGoPro-Regular.otf', name='Kozuka Gothic Pro', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,893 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\simsunb.ttf', name='SimSun-ExtB', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,893 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ANTQUABI.TTF', name='Book Antiqua', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,894 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeArabic-Bold.otf', name='Adobe Arabic', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,894 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\malgunbd.ttf', name='Malgun Gothic', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,895 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MyriadHebrew-Regular.otf', name='Myriad Hebrew', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,895 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BELLB.TTF', name='Bell MT', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,896 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\DINNextLTPro-Bold.ttf', name='DIN Next LT Pro', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,896 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ACaslonPro-Regular.otf', name='Adobe Caslon Pro', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,896 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\constan.ttf', name='Constantia', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,897 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\COOPBL.TTF', name='Cooper Black', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,897 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\IQYHT-Bold.ttf', name='IQYHT', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,898 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\msyhl.ttc', name='Microsoft YaHei', style='normal', variant='normal', weight=290, stretch='normal', size='scalable')) = 10.1545
+2026-02-27 22:54:24,898 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Inkfree.ttf', name='Ink Free', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,899 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\cambriab.ttf', name='Cambria', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,899 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ebrimabd.ttf', name='Ebrima', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,900 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\JUICE___.TTF', name='Juice ITC', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,901 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\georgiaz.ttf', name='Georgia', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,901 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LBRITEDI.TTF', name='Lucida Bright', style='italic', variant='normal', weight=600, stretch='normal', size='scalable')) = 11.24
+2026-02-27 22:54:24,901 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\HARLOWSI.TTF', name='Harlow Solid Italic', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,902 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\YuGothL.ttc', name='Yu Gothic', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,902 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Candaraz.ttf', name='Candara', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,903 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MinionPro-MediumIt.otf', name='Minion Pro', style='italic', variant='normal', weight=500, stretch='normal', size='scalable')) = 11.145
+2026-02-27 22:54:24,903 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\l_10646.ttf', name='Lucida Sans Unicode', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,904 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MinionPro-Bold.otf', name='Minion Pro', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,904 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MOD20.TTF', name='Modern No. 20', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,905 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MyriadPro-Semibold.otf', name='Myriad Pro', style='normal', variant='normal', weight=600, stretch='normal', size='scalable')) = 10.24
+2026-02-27 22:54:24,905 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LithosPro-Regular.otf', name='Lithos Pro', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,906 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\STFANGSO.TTF', name='STFangsong', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,906 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Gabriola.ttf', name='Gabriola', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,906 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\seguisym.ttf', name='Segoe UI Symbol', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,907 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\trebucit.ttf', name='Trebuchet MS', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,907 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\trebuc.ttf', name='Trebuchet MS', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,908 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\verdanab.ttf', name='Verdana', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 3.9713636363636367
+2026-02-27 22:54:24,908 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\GARABD.TTF', name='Garamond', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,909 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BELL.TTF', name='Bell MT', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,910 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ChaparralPro-Bold.otf', name='Chaparral Pro', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,910 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\cour.ttf', name='Courier New', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,911 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozMinPr6N-ExtraLight.otf', name='Kozuka Mincho Pr6N', style='normal', variant='normal', weight=250, stretch='normal', size='scalable')) = 10.1925
+2026-02-27 22:54:24,911 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\VINERITC.TTF', name='Viner Hand ITC', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,912 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SourceSansPro-BlackIt.otf', name='Source Sans Pro', style='italic', variant='normal', weight=900, stretch='normal', size='scalable')) = 11.525
+2026-02-27 22:54:24,912 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ACaslonPro-BoldItalic.otf', name='Adobe Caslon Pro', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,912 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\msyhbd.ttc', name='Microsoft YaHei', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,913 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MyriadPro-BoldCondIt.otf', name='Myriad Pro', style='italic', variant='normal', weight=700, stretch='condensed', size='scalable')) = 11.535
+2026-02-27 22:54:24,913 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\cambria.ttc', name='Cambria', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,913 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MyriadPro-It.otf', name='Myriad Pro', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,914 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\YuGothB.ttc', name='Yu Gothic', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,915 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\POORICH.TTF', name='Poor Richard', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,915 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\mmrtextb.ttf', name='Myanmar Text', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,916 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\trebucbd.ttf', name='Trebuchet MS', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,916 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\simsun.ttc', name='SimSun', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,917 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BELLI.TTF', name='Bell MT', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,917 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\JOKERMAN.TTF', name='Jokerman', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,918 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\HoboStd.otf', name='Hobo Std', style='normal', variant='normal', weight=500, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,918 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BOOKOSI.TTF', name='Bookman Old Style', style='italic', variant='normal', weight=300, stretch='normal', size='scalable')) = 11.145
+2026-02-27 22:54:24,919 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\consolai.ttf', name='Consolas', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,919 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\STKAITI.TTF', name='STKaiti', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,920 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\NumberOnly.ttf', name='NumberOnly', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,920 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\COLONNA.TTF', name='Colonna MT', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,921 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Sitka.ttc', name='Sitka Small', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,921 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\cambriaz.ttf', name='Cambria', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,922 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MyriadArabic-It.otf', name='Myriad Arabic', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,922 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\webdings.ttf', name='Webdings', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,922 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozGoPro-ExtraLight.otf', name='Kozuka Gothic Pro', style='normal', variant='normal', weight=250, stretch='normal', size='scalable')) = 10.1925
+2026-02-27 22:54:24,923 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ONYX.TTF', name='Onyx', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,923 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\tahomabd.ttf', name='Tahoma', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,924 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SitkaB.ttc', name='Sitka Small', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,924 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\CENTAUR.TTF', name='Centaur', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,924 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ebrima.ttf', name='Ebrima', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,925 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LeelawUI.ttf', name='Leelawadee UI', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,926 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MyriadPro-BoldCond.otf', name='Myriad Pro', style='normal', variant='normal', weight=700, stretch='condensed', size='scalable')) = 10.535
+2026-02-27 22:54:24,926 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\IQYHT-Medium.ttf', name='IQYHT', style='normal', variant='normal', weight=500, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,926 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LetterGothicStd-Slanted.otf', name='Letter Gothic Std', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,927 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozGoPro-Medium.otf', name='Kozuka Gothic Pro', style='normal', variant='normal', weight=500, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,927 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\HTOWERTI.TTF', name='High Tower Text', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,928 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\gadugib.ttf', name='Gadugi', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,928 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\mmrtext.ttf', name='Myanmar Text', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,929 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MinionPro-It.otf', name='Minion Pro', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,929 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\STXINWEI.TTF', name='STXinwei', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,930 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MinionPro-BoldCnIt.otf', name='Minion Pro', style='italic', variant='normal', weight=700, stretch='condensed', size='scalable')) = 11.535
+2026-02-27 22:54:24,930 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\consolab.ttf', name='Consolas', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,931 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ITCKRIST.TTF', name='Kristen ITC', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,931 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozMinPr6N-Bold.otf', name='Kozuka Mincho Pr6N', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,932 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ntailub.ttf', name='Microsoft New Tai Lue', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,932 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\CHILLER.TTF', name='Chiller', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,933 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\calibrib.ttf', name='Calibri', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,933 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\STSONG.TTF', name='STSong', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,934 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\HYZhongHeiTi-197.ttf', name='HYZhongHei', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,934 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\calibriz.ttf', name='Calibri', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,935 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\simfang.ttf', name='FangSong', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,935 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\TrajanPro-Regular.otf', name='Trajan Pro', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,936 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\comicz.ttf', name='Comic Sans MS', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,936 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BlackoakStd.otf', name='Blackoak Std', style='normal', variant='normal', weight=900, stretch='normal', size='scalable')) = 10.525
+2026-02-27 22:54:24,937 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MinionPro-BoldIt.otf', name='Minion Pro', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,937 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\calibrili.ttf', name='Calibri', style='italic', variant='normal', weight=300, stretch='normal', size='scalable')) = 11.145
+2026-02-27 22:54:24,938 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\PoplarStd.otf', name='Poplar Std', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,938 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SourceSansPro-BoldIt.otf', name='Source Sans Pro', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,938 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ANTQUAB.TTF', name='Book Antiqua', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,939 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeHebrew-Regular.otf', name='Adobe Hebrew', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,939 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\∑Ω’˝¥÷∫⁄ÀŒºÚÃÂ.ttf', name='FZCuHeiSongS-B-GB', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,940 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ACaslonPro-Semibold.otf', name='Adobe Caslon Pro', style='normal', variant='normal', weight=600, stretch='normal', size='scalable')) = 10.24
+2026-02-27 22:54:24,940 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\DINNextLTPro-Light.ttf', name='DIN Next LT Pro', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,941 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\malgunsl.ttf', name='Malgun Gothic', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,941 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ariali.ttf', name='Arial', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 7.413636363636363
+2026-02-27 22:54:24,942 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\phagspab.ttf', name='Microsoft PhagsPa', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,942 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\courbi.ttf', name='Courier New', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,942 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KUNSTLER.TTF', name='Kunstler Script', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,943 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AGaramondPro-Bold.otf', name='Adobe Garamond Pro', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,943 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\OratorStd.otf', name='Orator Std', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,944 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\consolaz.ttf', name='Consolas', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,944 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\constanb.ttf', name='Constantia', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,945 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\TektonPro-Bold.otf', name='Tekton Pro', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,945 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeDevanagari-Bold.otf', name='Adobe Devanagari', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,945 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeDevanagari-Italic.otf', name='Adobe Devanagari', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,945 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BAUHS93.TTF', name='Bauhaus 93', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,945 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AGaramondPro-BoldItalic.otf', name='Adobe Garamond Pro', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,946 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozMinPro-Regular.otf', name='Kozuka Mincho Pro', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,946 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MyriadPro-Cond.otf', name='Myriad Pro', style='normal', variant='normal', weight=400, stretch='condensed', size='scalable')) = 10.25
+2026-02-27 22:54:24,947 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\calibril.ttf', name='Calibri', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,947 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MyriadPro-Bold.otf', name='Myriad Pro', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,948 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\calibrii.ttf', name='Calibri', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,948 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\calibri.ttf', name='Calibri', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,949 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ALGER.TTF', name='Algerian', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,950 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SourceSansPro-Regular.otf', name='Source Sans Pro', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,950 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\simkai.ttf', name='KaiTi', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,951 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LBRITEI.TTF', name='Lucida Bright', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,951 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\corbelb.ttf', name='Corbel', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,952 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\INFROMAN.TTF', name='Informal Roman', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,952 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeSongStd-Light.otf', name='Adobe Song Std', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,953 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\framdit.ttf', name='Franklin Gothic Medium', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,953 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\YuGothR.ttc', name='Yu Gothic', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,954 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\verdanaz.ttf', name='Verdana', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 4.971363636363637
+2026-02-27 22:54:24,954 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MyriadArabic-Bold.otf', name='Myriad Arabic', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,955 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeHeitiStd-Regular.otf', name='Adobe Heiti Std', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,955 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Source Han Serif SC Heavy (TrueType).ttf', name='Source Han Serif SC', style='normal', variant='normal', weight=900, stretch='normal', size='scalable')) = 10.525
+2026-02-27 22:54:24,955 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ChaparralPro-Italic.otf', name='Chaparral Pro', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,956 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\mingliub.ttc', name='MingLiU-ExtB', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,956 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\couri.ttf', name='Courier New', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,957 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BOOKOSB.TTF', name='Bookman Old Style', style='normal', variant='normal', weight=600, stretch='normal', size='scalable')) = 10.24
+2026-02-27 22:54:24,957 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BKANT.TTF', name='Book Antiqua', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,958 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\GiddyupStd.otf', name='Giddyup Std', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,958 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\TektonPro-BoldExt.otf', name='Tekton Pro', style='normal', variant='normal', weight=700, stretch='expanded', size='scalable')) = 10.535
+2026-02-27 22:54:24,959 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Noto Sans SC Medium (TrueType).otf', name='Noto Sans SC', style='normal', variant='normal', weight=500, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,959 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeDevanagari-BoldItalic.otf', name='Adobe Devanagari', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,959 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ChaparralPro-LightIt.otf', name='Chaparral Pro', style='italic', variant='normal', weight=300, stretch='normal', size='scalable')) = 11.145
+2026-02-27 22:54:24,960 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\wingding.ttf', name='Wingdings', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,960 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SourceSansPro-ExtraLightIt.otf', name='Source Sans Pro', style='italic', variant='normal', weight=200, stretch='normal', size='scalable')) = 11.24
+2026-02-27 22:54:24,961 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ARIALNI.TTF', name='Arial', style='italic', variant='normal', weight=400, stretch='condensed', size='scalable')) = 7.613636363636363
+2026-02-27 22:54:24,961 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeFanHeitiStd-Bold.otf', name='Adobe Fan Heiti Std', style='normal', variant='normal', weight=600, stretch='normal', size='scalable')) = 10.24
+2026-02-27 22:54:24,962 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AGaramondPro-Italic.otf', name='Adobe Garamond Pro', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,962 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MinionPro-Regular.otf', name='Minion Pro', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,963 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MyriadPro-CondIt.otf', name='Myriad Pro', style='italic', variant='normal', weight=400, stretch='condensed', size='scalable')) = 11.25
+2026-02-27 22:54:24,963 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\VLADIMIR.TTF', name='Vladimir Script', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,964 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ACaslonPro-Italic.otf', name='Adobe Caslon Pro', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,964 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SNAP____.TTF', name='Snap ITC', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,964 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\mvboli.ttf', name='MV Boli', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,965 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\holomdl2.ttf', name='HoloLens MDL2 Assets', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,965 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LetterGothicStd-Bold.otf', name='Letter Gothic Std', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,966 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeArabic-BoldItalic.otf', name='Adobe Arabic', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,967 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MyriadArabic-BoldIt.otf', name='Myriad Arabic', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,967 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MyriadPro-BoldIt.otf', name='Myriad Pro', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,968 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Candaral.ttf', name='Candara', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,968 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LATINWD.TTF', name='Wide Latin', style='normal', variant='normal', weight=400, stretch='expanded', size='scalable')) = 10.25
+2026-02-27 22:54:24,969 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\seguisb.ttf', name='Segoe UI', style='normal', variant='normal', weight=600, stretch='normal', size='scalable')) = 10.24
+2026-02-27 22:54:24,969 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SHOWG.TTF', name='Showcard Gothic', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,970 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\msjhl.ttc', name='Microsoft JhengHei', style='normal', variant='normal', weight=290, stretch='normal', size='scalable')) = 10.1545
+2026-02-27 22:54:24,970 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\PLAYBILL.TTF', name='Playbill', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,971 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\IQYHT-Regular.ttf', name='IQYHT', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,971 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\seguihis.ttf', name='Segoe UI Historic', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,972 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozGoPr6N-ExtraLight.otf', name='Kozuka Gothic Pr6N', style='normal', variant='normal', weight=250, stretch='normal', size='scalable')) = 10.1925
+2026-02-27 22:54:24,972 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\NuevaStd-CondItalic.otf', name='Nueva Std', style='italic', variant='normal', weight=400, stretch='condensed', size='scalable')) = 11.25
+2026-02-27 22:54:24,972 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\FREESCPT.TTF', name='Freestyle Script', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,973 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeHebrew-Bold.otf', name='Adobe Hebrew', style='normal', variant='normal', weight=600, stretch='normal', size='scalable')) = 10.24
+2026-02-27 22:54:24,973 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozGoPr6N-Bold.otf', name='Kozuka Gothic Pr6N', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,974 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Noto Sans SC Bold (TrueType).otf', name='Noto Sans SC', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,974 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segoescb.ttf', name='Segoe Script', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,975 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Noto Sans SC (TrueType).otf', name='Noto Sans SC', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,975 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozGoPro-Bold.otf', name='Kozuka Gothic Pro', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,975 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LithosPro-Black.otf', name='Lithos Pro', style='normal', variant='normal', weight=850, stretch='normal', size='scalable')) = 10.4775
+2026-02-27 22:54:24,976 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\palabi.ttf', name='Palatino Linotype', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,976 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\symbol.ttf', name='Symbol', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,977 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\pala.ttf', name='Palatino Linotype', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,977 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MinionPro-BoldCn.otf', name='Minion Pro', style='normal', variant='normal', weight=700, stretch='condensed', size='scalable')) = 10.535
+2026-02-27 22:54:24,978 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SourceSansPro-It.otf', name='Source Sans Pro', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,978 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\msyh.ttc', name='Microsoft YaHei', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,979 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ARIALNB.TTF', name='Arial', style='normal', variant='normal', weight=700, stretch='condensed', size='scalable')) = 6.8986363636363635
+2026-02-27 22:54:24,979 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\ANTQUAI.TTF', name='Book Antiqua', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,980 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LBRITED.TTF', name='Lucida Bright', style='normal', variant='normal', weight=600, stretch='normal', size='scalable')) = 10.24
+2026-02-27 22:54:24,980 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\STXIHEI.TTF', name='STXihei', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,981 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Candarali.ttf', name='Candara', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,981 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\STXINGKA.TTF', name='STXingkai', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,981 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MyriadHebrew-Bold.otf', name='Myriad Hebrew', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,982 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MyriadHebrew-BoldIt.otf', name='Myriad Hebrew', style='italic', variant='normal', weight=700, stretch='normal', size='scalable')) = 11.335
+2026-02-27 22:54:24,982 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BASKVILL.TTF', name='Baskerville Old Face', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,983 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\CALIFB.TTF', name='Californian FB', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,984 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\comicbd.ttf', name='Comic Sans MS', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,984 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozGoPro-Light.otf', name='Kozuka Gothic Pro', style='normal', variant='normal', weight=300, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,984 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MyriadPro-Regular.otf', name='Myriad Pro', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,985 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SIMYOU.TTF', name='YouYuan', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,986 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MATURASC.TTF', name='Matura MT Script Capitals', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,986 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LFAXDI.TTF', name='Lucida Fax', style='italic', variant='normal', weight=600, stretch='normal', size='scalable')) = 11.24
+2026-02-27 22:54:24,986 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\segmdl2.ttf', name='Segoe MDL2 Assets', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,987 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BROADW.TTF', name='Broadway', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,987 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SourceSansPro-Semibold.otf', name='Source Sans Pro', style='normal', variant='normal', weight=600, stretch='normal', size='scalable')) = 10.24
+2026-02-27 22:54:24,988 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\constani.ttf', name='Constantia', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,988 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\AdobeMyungjoStd-Medium.otf', name='Adobe Myungjo Std', style='normal', variant='normal', weight=500, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,989 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\PrestigeEliteStd-Bd.otf', name='Prestige Elite Std', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,989 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\seguibli.ttf', name='Segoe UI', style='italic', variant='normal', weight=900, stretch='normal', size='scalable')) = 11.525
+2026-02-27 22:54:24,990 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\KozGoPr6N-Medium.otf', name='Kozuka Gothic Pr6N', style='normal', variant='normal', weight=500, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,990 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\SIMLI.TTF', name='LiSu', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,990 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\Deng.ttf', name='DengXian', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,991 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MinionPro-Medium.otf', name='Minion Pro', style='normal', variant='normal', weight=500, stretch='normal', size='scalable')) = 10.145
+2026-02-27 22:54:24,991 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\BRLNSDB.TTF', name='Berlin Sans FB Demi', style='normal', variant='normal', weight=700, stretch='normal', size='scalable')) = 10.335
+2026-02-27 22:54:24,992 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\verdana.ttf', name='Verdana', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 3.6863636363636365
+2026-02-27 22:54:24,992 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\MyriadArabic-Regular.otf', name='Myriad Arabic', style='normal', variant='normal', weight=400, stretch='normal', size='scalable')) = 10.05
+2026-02-27 22:54:24,993 - DEBUG - font_manager.py - _findfont_cached - 1428 - findfont: score(FontEntry(fname='C:\\Windows\\Fonts\\LHANDW.TTF', name='Lucida Handwriting', style='italic', variant='normal', weight=400, stretch='normal', size='scalable')) = 11.05
+2026-02-27 22:54:24,993 - DEBUG - font_manager.py - _findfont_cached - 1460 - findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('C:\\Python39\\lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSans.ttf') with score of 0.050000.
+2026-02-27 22:54:25,016 - INFO - env.py - _game_over - 479 -    0 - equity/50/50  1 - equity/50/80  2 - equity/70/70  3 - equity/20/30  4 - Random  5 - Random
+0               500               500               500               500         500         500
+0                 0                 0                 0              2000         500         500
+0                 0                 0                 0              3000           0           0
+2026-02-27 22:54:29,648 - INFO - env.py - _game_over - 485 - 3    1
+Name: count, dtype: int64
+2026-02-27 22:54:29,650 - INFO - env.py - _game_over - 486 - Best Player: 3
+2026-02-27 22:54:29,654 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 23:00:49,031 - INFO - main.py - command_line_parser - 56 - Initializing program
+2026-02-27 23:01:57,067 - INFO - main.py - command_line_parser - 56 - Initializing program
+2026-02-27 23:02:08,012 - INFO - main.py - command_line_parser - 56 - Initializing program
+2026-02-27 23:02:08,028 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-27 23:02:08,028 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-27 23:02:08,028 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-27 23:02:08,028 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-27 23:02:08,028 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-27 23:02:08,028 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['9S', '7C'] and $500
+2026-02-27 23:02:08,028 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['6S', 'KC'] and $500
+2026-02-27 23:02:08,028 - INFO - env.py - _initiate_round - 504 - 
+2026-02-27 23:02:08,028 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-27 23:02:08,028 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-27 23:02:08,028 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-27 23:02:08,028 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 23:02:08,028 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 23:02:08,098 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 23:02:09,084 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 23:02:09,084 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 23:02:09,085 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 23:02:09,141 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-27 23:02:09,199 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.RAISE_POT - Remaining stack: 496, Round pot: 6, Community pot: 0, player pot: 4
+2026-02-27 23:02:09,201 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-27 23:02:09,202 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 23:02:09,258 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-27 23:02:09,300 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-27 23:02:09,300 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-27 23:02:09,301 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-27 23:02:09,356 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 07:57:45,455 - INFO - main.py - command_line_parser - 56 - Initializing program
+2026-02-28 07:57:45,455 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 07:57:45,471 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 07:57:45,471 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 07:57:45,471 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 07:57:45,471 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-28 07:57:45,471 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['2D', '5S'] and $500
+2026-02-28 07:57:45,471 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['8H', 'KD'] and $500
+2026-02-28 07:57:45,471 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 07:57:45,471 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 07:57:45,471 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 07:57:45,471 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 07:57:45,471 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 07:57:45,471 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 07:57:45,533 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 07:57:46,395 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-28 07:57:46,395 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 07:57:46,395 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 07:57:46,442 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 07:57:46,489 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.RAISE_POT - Remaining stack: 496, Round pot: 6, Community pot: 0, player pot: 4
+2026-02-28 07:57:46,489 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 07:57:46,489 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 07:57:46,551 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 07:57:46,582 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-28 07:57:46,582 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 07:57:46,582 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 07:57:46,645 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 07:59:50,967 - INFO - main.py - command_line_parser - 56 - Initializing program
+2026-02-28 07:59:50,967 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 07:59:50,967 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 07:59:50,967 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 07:59:50,967 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 07:59:50,967 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-28 07:59:50,967 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['8C', '4H'] and $500
+2026-02-28 07:59:50,967 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['9S', 'QD'] and $500
+2026-02-28 07:59:50,967 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 07:59:50,982 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 07:59:50,982 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 07:59:50,982 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 07:59:50,982 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 07:59:50,982 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 07:59:51,029 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 07:59:51,823 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-28 07:59:51,823 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 07:59:51,823 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 07:59:51,873 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 07:59:51,920 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.RAISE_POT - Remaining stack: 496, Round pot: 6, Community pot: 0, player pot: 4
+2026-02-28 07:59:51,920 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 07:59:51,920 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 07:59:51,967 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 07:59:51,998 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-28 07:59:51,998 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 07:59:51,998 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 07:59:52,061 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 08:00:42,594 - INFO - main.py - command_line_parser - 56 - Initializing program
+2026-02-28 08:00:42,594 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 08:00:42,609 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 08:00:42,609 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 08:00:42,609 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 08:00:42,609 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-28 08:00:42,609 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['9C', 'QD'] and $500
+2026-02-28 08:00:42,609 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['6H', 'AH'] and $500
+2026-02-28 08:00:42,609 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 08:00:42,609 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 08:00:42,609 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 08:00:42,609 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 08:00:42,609 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:00:42,609 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:00:42,672 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:00:42,672 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-28 08:00:42,672 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:00:42,672 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:00:42,734 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:00:42,734 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.RAISE_POT - Remaining stack: 496, Round pot: 6, Community pot: 0, player pot: 4
+2026-02-28 08:00:42,734 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 08:00:42,734 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:00:42,781 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 08:00:42,781 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-28 08:00:42,781 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 08:00:42,781 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:00:42,844 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 08:04:10,364 - INFO - main.py - command_line_parser - 125 - Initializing program
+2026-02-28 08:04:10,380 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 08:04:10,380 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 08:04:10,380 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 08:04:10,380 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 08:04:10,380 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-28 08:04:10,380 - INFO - env.py - _distribute_cards - 671 - Player 0 got ['2S', 'KC'] and $500
+2026-02-28 08:04:10,380 - INFO - env.py - _distribute_cards - 671 - Player 1 got ['AC', 'AH'] and $500
+2026-02-28 08:04:10,380 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 08:04:10,380 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 08:04:10,396 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 08:04:10,396 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 08:04:10,396 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:04:10,396 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:04:10,442 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:04:10,442 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-28 08:04:10,442 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:04:10,458 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:04:10,505 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:04:10,505 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.ALL_IN - Remaining stack: 0, Round pot: 502, Community pot: 0, player pot: 500
+2026-02-28 08:04:10,505 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 502
+2026-02-28 08:04:10,505 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:04:10,567 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 502
+2026-02-28 08:04:10,567 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-28 08:04:10,567 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 502
+2026-02-28 08:04:10,567 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:04:10,614 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 502
+2026-02-28 08:14:47,251 - INFO - main.py - command_line_parser - 125 - Initializing program
+2026-02-28 08:14:47,251 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 08:14:47,251 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 08:14:47,267 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 08:14:47,267 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 08:14:47,267 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-28 08:14:47,267 - INFO - env.py - _distribute_cards - 673 - ÕÊº“ 0  ÷≈∆ ['JC', '9H']£¨≥Ô¬Î $500
+2026-02-28 08:14:47,267 - INFO - env.py - _distribute_cards - 675 - ÕÊº“ 1  ÷≈∆ [??, ??]£¨≥Ô¬Î $500
+2026-02-28 08:14:47,267 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 08:14:47,267 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 08:14:47,267 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 08:14:47,267 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 08:14:47,267 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:14:47,267 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:14:47,329 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:14:47,329 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-28 08:14:47,329 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:14:47,329 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:14:47,376 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:14:47,376 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.RAISE_POT - Remaining stack: 496, Round pot: 6, Community pot: 0, player pot: 4
+2026-02-28 08:14:47,376 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 08:14:47,376 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:14:47,438 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 08:14:47,438 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-28 08:14:47,438 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 08:14:47,438 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:14:47,485 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 08:21:30,266 - INFO - main.py - command_line_parser - 125 - Initializing program
+2026-02-28 08:21:30,282 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 08:21:30,282 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 08:21:30,282 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 08:21:30,282 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 08:21:30,282 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-28 08:21:30,282 - INFO - env.py - _distribute_cards - 673 - ÕÊº“ 0  ÷≈∆ ['6D', 'TC']£¨≥Ô¬Î $500
+2026-02-28 08:21:30,282 - INFO - env.py - _distribute_cards - 675 - ÕÊº“ 1  ÷≈∆ [??, ??]£¨≥Ô¬Î $500
+2026-02-28 08:21:30,282 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 08:21:30,282 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 08:21:30,282 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 08:21:30,282 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 08:21:30,282 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:21:30,297 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:21:30,344 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:21:30,344 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-28 08:21:30,344 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:21:30,344 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:21:30,407 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:21:30,407 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.RAISE_POT - Remaining stack: 496, Round pot: 6, Community pot: 0, player pot: 4
+2026-02-28 08:21:30,407 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 08:21:30,407 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:21:30,453 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 08:21:30,453 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-28 08:21:30,453 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 08:21:30,453 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:21:30,516 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 08:24:08,432 - INFO - main.py - command_line_parser - 125 - Initializing program
+2026-02-28 08:24:08,432 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 08:24:08,432 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 08:24:08,432 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 08:24:08,432 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 08:24:08,432 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-28 08:24:08,432 - INFO - env.py - _distribute_cards - 673 - ÕÊº“ 0  ÷≈∆ ['4S', 'KD']£¨≥Ô¬Î $500
+2026-02-28 08:24:08,432 - INFO - env.py - _distribute_cards - 675 - ÕÊº“ 1  ÷≈∆ [??, ??]£¨≥Ô¬Î $500
+2026-02-28 08:24:08,448 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 08:24:08,448 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 08:24:08,448 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 08:24:08,448 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 08:24:08,448 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:24:08,448 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:24:08,494 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:24:08,494 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-28 08:24:08,494 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:24:08,494 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:24:08,557 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:24:08,557 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.FOLD - Remaining stack: 499, Round pot: 3, Community pot: 0, player pot: 1
+2026-02-28 08:24:08,557 - DEBUG - cycle.py - next_player - 60 - Only one player remaining
+2026-02-28 08:24:08,557 - INFO - env.py - _next_player - 609 - Only one player remaining in round
+2026-02-28 08:24:08,557 - INFO - env.py - _get_winner - 585 - Player 0 won: Only remaining player in round
+2026-02-28 08:24:08,557 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 08:24:08,557 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 08:24:08,557 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 08:24:08,572 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 08:24:08,572 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 1
+2026-02-28 08:24:08,572 - INFO - env.py - _distribute_cards - 673 - ÕÊº“ 0  ÷≈∆ ['6S', 'AH']£¨≥Ô¬Î $501
+2026-02-28 08:24:08,572 - INFO - env.py - _distribute_cards - 675 - ÕÊº“ 1  ÷≈∆ [??, ??]£¨≥Ô¬Î $499
+2026-02-28 08:24:08,572 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 08:24:08,572 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 08:24:08,572 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.SMALL_BLIND - Remaining stack: 500, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 08:24:08,572 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.BIG_BLIND - Remaining stack: 497, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 08:24:08,572 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:24:08,572 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:24:08,635 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:24:08,635 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-28 08:24:08,635 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:24:08,635 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:24:08,682 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:29:32,677 - INFO - main.py - command_line_parser - 54 - Initializing program
+2026-02-28 08:29:32,708 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 08:29:32,710 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 08:29:32,711 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 08:29:32,713 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 08:29:32,714 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-28 08:29:32,716 - INFO - env.py - _distribute_cards - 673 - ÕÊº“ 0  ÷≈∆ ['KS', '2H']£¨≥Ô¬Î $500
+2026-02-28 08:29:32,717 - INFO - env.py - _distribute_cards - 675 - ÕÊº“ 1  ÷≈∆ [??, ??]£¨≥Ô¬Î $500
+2026-02-28 08:29:32,719 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 08:29:32,720 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 08:29:32,722 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 08:29:32,727 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 08:29:32,727 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:29:32,727 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:29:32,974 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:29:32,974 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-28 08:29:32,974 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:29:32,974 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:29:33,191 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:29:33,191 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.RAISE_POT - Remaining stack: 496, Round pot: 6, Community pot: 0, player pot: 4
+2026-02-28 08:29:33,191 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 08:29:33,191 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:29:33,424 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 08:29:33,424 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-28 08:29:33,424 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 08:29:33,424 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:29:33,641 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 6
+2026-02-28 08:37:14,959 - INFO - main.py - command_line_parser - 54 - Initializing program
+2026-02-28 08:37:14,986 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 08:37:14,988 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 08:37:14,989 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 08:37:14,991 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 08:37:14,992 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 0
+2026-02-28 08:37:14,994 - INFO - env.py - _distribute_cards - 673 - ÕÊº“ 0  ÷≈∆ ['7D', 'TC']£¨≥Ô¬Î $500
+2026-02-28 08:37:14,995 - INFO - env.py - _distribute_cards - 675 - ÕÊº“ 1  ÷≈∆ [??, ??]£¨≥Ô¬Î $500
+2026-02-28 08:37:14,997 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 08:37:14,998 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 08:37:15,000 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.SMALL_BLIND - Remaining stack: 499, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 08:37:15,002 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.BIG_BLIND - Remaining stack: 498, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 08:37:15,002 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:37:15,006 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:37:15,220 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:37:15,220 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-28 08:37:15,220 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:37:15,220 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:37:15,423 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:37:15,423 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.FOLD - Remaining stack: 499, Round pot: 3, Community pot: 0, player pot: 1
+2026-02-28 08:37:15,438 - DEBUG - cycle.py - next_player - 60 - Only one player remaining
+2026-02-28 08:37:15,438 - INFO - env.py - _next_player - 609 - Only one player remaining in round
+2026-02-28 08:37:15,438 - INFO - env.py - _get_winner - 585 - Player 0 won: Only remaining player in round
+2026-02-28 08:37:15,438 - INFO - env.py - _start_new_hand - 420 - 
+2026-02-28 08:37:15,438 - INFO - env.py - _start_new_hand - 421 - ++++++++++++++++++
+2026-02-28 08:37:15,438 - INFO - env.py - _start_new_hand - 422 - Starting new hand.
+2026-02-28 08:37:15,438 - INFO - env.py - _start_new_hand - 423 - ++++++++++++++++++
+2026-02-28 08:37:15,438 - INFO - env.py - _distribute_cards - 663 - Dealer is at position 1
+2026-02-28 08:37:15,438 - INFO - env.py - _distribute_cards - 673 - ÕÊº“ 0  ÷≈∆ ['AH', '8D']£¨≥Ô¬Î $501
+2026-02-28 08:37:15,438 - INFO - env.py - _distribute_cards - 675 - ÕÊº“ 1  ÷≈∆ [??, ??]£¨≥Ô¬Î $499
+2026-02-28 08:37:15,438 - INFO - env.py - _initiate_round - 504 - 
+2026-02-28 08:37:15,454 - INFO - env.py - _initiate_round - 505 - ===Round: Stage: PREFLOP
+2026-02-28 08:37:15,454 - INFO - env.py - _process_decision - 408 - Seat 0 (You (Human)): Action.SMALL_BLIND - Remaining stack: 500, Round pot: 1, Community pot: 0, player pot: 1
+2026-02-28 08:37:15,454 - INFO - env.py - _process_decision - 408 - Seat 1 (AI_Equity): Action.BIG_BLIND - Remaining stack: 497, Round pot: 3, Community pot: 0, player pot: 2
+2026-02-28 08:37:15,454 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:37:15,454 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:37:15,673 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:37:15,673 - DEBUG - env.py - step - 187 - Autoplay agent. Call action method of agent.
+2026-02-28 08:37:15,673 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
+2026-02-28 08:37:15,673 - DEBUG - montecarlo_python.py - run_montecarlo - 196 - Preflop reverse tables for ranges for opponent: NO
+2026-02-28 08:37:15,889 - DEBUG - env.py - _get_legal_moves - 648 - Community+current round pot pot: 3
