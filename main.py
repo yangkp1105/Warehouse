@@ -87,7 +87,6 @@ game_mode_3_price_5 = {
 ai_card = []
 user_card = []
 
-
 class Game:
     def __init__(self, js_file='data.json', key_file='secret.key'):
         self.js_file = js_file
