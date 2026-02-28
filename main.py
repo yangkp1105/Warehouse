@@ -9,7 +9,7 @@ from cryptography.fernet import Fernet
 import sys
 import importlib.util
 
-pyc_path = r'Money Games\__pycache__\blackjack.pyc'  # 使用完整路径
+pyc_path = r'__pycache__\blackjack.pyc'  # 使用完整路径
 
 # 加载模块
 spec = importlib.util.spec_from_file_location('blackjack', pyc_path)
@@ -320,7 +320,7 @@ def main_print():
     print('沉迷游戏伤身，合理安排时间，享受健康生活')
     print('======游戏选择======')
     print('1.*票')
-    print('2.德*扑克')
+    print('2.德*扑克(还未完成千万别碰，碰了电脑卡死)')
     print('3.俄罗斯*轮盘')
     print('4.二十一点')
     print('======其他功能======')
@@ -433,8 +433,7 @@ def game_mode_4_start():
 def AI_bj():
     ai_get_card  = poker.draw_card()
     ranks = ai_get_card[:-1]
-    ai_card.append(1,f'{ranks}')
-    print(f'{ranks}')
+    ai_card.append(f'{ranks}')
 
 def bj_1():
     game = Game('data.json', 'secret.key')
@@ -639,6 +638,60 @@ def pp():
     time.sleep(3)
     exit()
 
+def start_texas_holdem():
+    """启动德州扑克游戏"""
+    import subprocess
+    import os
+    import time
+    
+    # 德州扑克游戏路径
+    poker_dir = r"Money Games\neuron_poker-master"
+    python39_path = r"C:\Python39\python.exe"
+    
+    # 检查目录是否存在
+    if not os.path.exists(poker_dir):
+        print(f"错误：找不到德州扑克游戏目录 {poker_dir}")
+        print("请检查路径是否正确")
+        input("按回车键返回主菜单...")
+        return
+    
+    print("正在启动德州扑克游戏...")
+    print("游戏将在新窗口中运行")
+    print("=" * 50)
+    
+    try:
+        # 在新窗口中启动游戏
+        process = subprocess.Popen(
+            [python39_path, "main.py", "selfplay", "keypress"],
+            cwd=poker_dir,
+            creationflags=subprocess.CREATE_NEW_CONSOLE
+        )
+        print(f"德州扑克游戏已启动！(进程ID: {process.pid})")
+        print("请切换到新窗口进行游戏")
+        print("\n" + "=" * 50)
+        print("【重要】游戏结束后，请关闭那个黑色窗口")
+        print("然后在这个窗口中按回车键返回主菜单")
+        print("=" * 50)
+        
+        # 等待用户按回车
+        input()
+        
+        # 检查进程是否还在运行，如果在就结束它
+        if process.poll() is None:
+            print("正在关闭德州扑克游戏...")
+            process.terminate()
+            time.sleep(1)
+            if process.poll() is None:
+                process.kill()
+        
+    except Exception as e:
+        print(f"启动失败：{e}")
+        print("可能的原因：")
+        print("1. Python 3.9 未正确安装")
+        print("2. 游戏文件路径不正确")
+        print("3. 缺少必要的依赖包")
+        input("按回车键返回主菜单...")
+
 main_print()
 
 game_mode = 'main'
@@ -652,7 +705,7 @@ while True:
             time.sleep(1)  # 防止重复触发
         elif keyboard.is_pressed('2'):
             print('你选择了德*扑克')
-            pp()
+            start_texas_holdem()
                 # 在这里添加德*扑克游戏的逻辑
             time.sleep(1)
         elif keyboard.is_pressed('3'):
@@ -691,7 +744,7 @@ while True:
         elif keyboard.is_pressed('8'):
             game_mode = 'game_explain'
             print('***************************************************************************************************')
-            print('游戏版本：v1.0.4beta  发布时间：2026/2/26')
+            print('游戏版本：v1.0.5beta  发布时间：2026/2/28')
             print('广州市第二中学2023届230516开发')
             print('作者的话：')
             print('写这个游戏其实有小学的因素，我在小学机房里面留下的CS1.6，给很多我下几届的学生带来一点娱乐')
@@ -703,7 +756,8 @@ while True:
             print('如果你想完成这个游戏，可以在github上找到这个项目，或者添加微信号：vicetone9y9，备注：main.py')
             print('***************************************************************************************************')
             print('更新日志:\nv1.0.1 2026/2/21 游戏大体结构创建\nv1.0.2 2026/2/22 游戏3搭建完成，大厅优化,增加管理者模式\nv1.0.3 2026/2/23 增加无敌模式，借money，月份系统。优化储存，数据加密')
-            print('v1.0.4beta 2026/2/26 修复巨大的储存调用bug，优化扑克牌系统，完成21点项目菜单')
+            print('v1.0.4beta 2026/2/26 修复巨大的储存调用bug，优化扑克牌系统，完成21点项目菜单\nv1.0.4 2026/2/26 修复21点菜单界面逻辑问题')
+            print('v1.0.5beta 2026/2/28 修复了一些连接问题，增加德州扑克游戏插件（github开源项目）')
             print('0.返回')
     elif game_mode == 'game_explain':
         if keyboard.is_pressed('0'):
@@ -827,8 +881,6 @@ while True:
         elif choice == '1':
             game_mode = 'bj_rule'
             blackjack.bj_rule()
-            game_mode = 'bj_rule'
-            AI_bj()
             time.sleep(1)
         elif choice == '2':
             bj_level = 1
