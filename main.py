@@ -8,13 +8,20 @@ import hashlib
 from cryptography.fernet import Fernet
 import sys
 import importlib.util
+import requests
+from datetime import datetime, timedelta
 
-pyc_path = r'__pycache__\blackjack.pyc'  # 使用完整路径
 
+pyc_path_bj = r'__pycache__\blackjack.pyc'  # 使用完整路径
+pyc_path_gold = r'__pycache__\gold_money.cpython-313.pyc'
 # 加载模块
-spec = importlib.util.spec_from_file_location('blackjack', pyc_path)
-blackjack = importlib.util.module_from_spec(spec)
-spec.loader.exec_module(blackjack)
+spec_1 = importlib.util.spec_from_file_location('blackjack', pyc_path_bj)
+blackjack = importlib.util.module_from_spec(spec_1)
+spec_1.loader.exec_module(blackjack)
+
+spec_2 = importlib.util.spec_from_file_location('blackjack', pyc_path_gold)
+gold = importlib.util.module_from_spec(spec_2)
+spec_2.loader.exec_module(gold)
 
 levels_num_book={'1': 500,#字典数字等级对应{'x+1'级}方便写代码
                  '2': 2000,
@@ -119,9 +126,21 @@ class Game:
         encrypted = self.cipher.encrypt(money_str.encode())
         return encrypted.decode()
     
+    def encrypt_gold(self, gold):#加密黄金
+        gold_str = str(gold)
+        encrypted = self.cipher.encrypt(gold_str.encode())
+        return encrypted.decode()
+    
     def decrypt_money(self, encrypted_money):#解密金钱
         try:
             decrypted = self.cipher.decrypt(encrypted_money.encode())
+            return int(decrypted.decode())
+        except:
+            return 0
+
+    def decrypt_gold(self, encrypted_gold):#解密黄金
+        try:
+            decrypted = self.cipher.decrypt(encrypted_gold.encode())
             return int(decrypted.decode())
         except:
             return 0
@@ -152,9 +171,33 @@ class Game:
         # 其他情况返回默认值
         return 1000
     
+    def set_gold(self, new_gold):#设置加密后的金钱
+        if isinstance(new_gold, int):
+            self.data['gold'] = self.encrypt_money(new_gold)
+        else:
+            # 如果已经是加密字符串，直接保存
+            self.data['gold'] = new_gold
+        self.save_data()
+    
+    def get_gold(self):#获取解密后的金钱
+        gold_value = self.data['gold']
+        
+        # 如果是整数，说明是未加密的，直接返回
+        if isinstance(gold_value, int):
+            return gold_value
+        
+        # 如果是字符串，解密返回
+        if isinstance(gold_value, str):
+            try:
+                return self.decrypt_money(gold_value)
+            except:
+                # 解密失败返回默认值
+                return 0
+
     def load_data(self):#加载数据
         initial_data = {
             'money': self.encrypt_money(1000),  # 加密存储
+            'gold': self.encrypt_gold(0),
             'levels': 1,
             'levels_num': 0,
             'month': 0,
@@ -318,17 +361,18 @@ def main_print():
     print('注意自我保护，谨防受骗上当，适度游戏益脑')
     print('沉迷游戏伤身，合理安排时间，享受健康生活')
     print('======游戏选择======')
-    print('1.*票')
+    print('1.交易所')
     print('2.德*扑克(还未完成千万别碰，碰了电脑卡死)')
     print('3.俄罗斯*轮盘')
     print('4.二十一点')
+    print('======玩家选项======')
+    print('9.仓库')
     print('======其他功能======')
     print('5.借money')
     print('6.管理员模式')
     print('7.退出游戏')
     print('8.关于游戏')
     print('#####################')
-    print('在游戏大厅按对应数字键选择游戏，进入后按照提示操作即可')
     game_mode = 'main'
 
 def admin_print():
@@ -644,7 +688,7 @@ def start_texas_holdem():
     import time
     
     # 德州扑克游戏路径
-    poker_dir = r"Money Games\neuron_poker-master"
+    poker_dir = r"neuron_poker-master"
     python39_path = r"C:\Python39\python.exe"
     
     # 检查目录是否存在
@@ -697,22 +741,36 @@ game_mode = 'main'
 
 while True:
     if game_mode == 'main':
-        if keyboard.is_pressed('1'):
-            print('你选择了*票')
-            pp()
-                # 在这里添加*票游戏的逻辑
+        main_input = str(input('在游戏大厅按对应数字键选择游戏，进入后按照提示操作即可：'))
+        if main_input == '1':
+            game_mode = 'transaction'
+            print('你选择了交易所')
+            print('')
+            print('')
+            print("每日第一次打开将会获取昨日的真实数据来填充交易所")
+            print('1.黄金')
+            print('2.股票')
+            print('0.退出')
+            input_1 = int(input('请输入数字:'))
+            if input_1 == 1:
+                gold.take_gold_money()
+            elif input_1 == 2:
+                pp()
+            elif input_1 == 0:
+                main_print()
+                game_mode = 'main'
             time.sleep(1)  # 防止重复触发
-        elif keyboard.is_pressed('2'):
+        elif main_input == '2':
             print('你选择了德*扑克')
             start_texas_holdem()
                 # 在这里添加德*扑克游戏的逻辑
             time.sleep(1)
-        elif keyboard.is_pressed('3'):
+        elif main_input == '3':
             print('你选择了俄罗斯*轮盘')
             game_mode_3()
             game_mode = 'game_3'
             time.sleep(1)
-        elif keyboard.is_pressed('4'):
+        elif main_input == '4':
             print('你选择了二十一点')
             game_mode = 'blackjack'
             while keyboard.is_pressed('4'):
@@ -723,12 +781,12 @@ while True:
             time.sleep(0.2)
                 # 在这里添加二十一点游戏的逻辑
             time.sleep(1)
-        elif keyboard.is_pressed('5'):#借钱
+        elif main_input == '5':#借钱
             game_mode = 'get_money'
             print('你选择了借money')
             get_money()
             time.sleep(1)
-        elif keyboard.is_pressed('6'):
+        elif main_input == '6':
             print('进入管理员模式')
             password_input = input(str('请输入管理员密码: '))
             if game.verify_password(password_input):
@@ -738,12 +796,12 @@ while True:
                 print('密码错误')
                 main_print()
             time.sleep(1)
-        elif keyboard.is_pressed('7'):
+        elif main_input == '7':
             exit()
-        elif keyboard.is_pressed('8'):
+        elif main_input == '8':
             game_mode = 'game_explain'
             print('***************************************************************************************************')
-            print('游戏版本：v1.0.5beta  发布时间：2026/2/28')
+            print('游戏版本：v1.0.7online  发布时间：2026/3/4')
             print('广州市第二中学2023届230516开发')
             print('作者的话：')
             print('写这个游戏其实有小学的因素，我在小学机房里面留下的CS1.6，给很多我下几届的学生带来一点娱乐')
@@ -757,8 +815,14 @@ while True:
             print('更新日志:\nv1.0.1 2026/2/21 游戏大体结构创建\nv1.0.2 2026/2/22 游戏3搭建完成，大厅优化,增加管理者模式\nv1.0.3 2026/2/23 增加无敌模式，借money，月份系统。优化储存，数据加密')
             print('v1.0.4beta 2026/2/26 修复巨大的储存调用bug，优化扑克牌系统，完成21点项目菜单\nv1.0.4 2026/2/26 修复21点菜单界面逻辑问题')
             print('v1.0.5beta 2026/2/28 修复了一些连接问题，增加德州扑克游戏插件（github开源项目）')
+            print('v1.0.16 2026/3/3 选项1名称改为“交易所”，添加真实的黄金售价数据进入游戏，每天第一次打开交易所将会获取真实数据，游戏内当天每过一个月将会随机算法输出数据\n，此功能仅会在online版本上线。单机版采用随机算法')
+            print('v1.0.7online 2026/3/4 丰富交易所界面。主菜单增加9——仓库功能，游戏正式进入online版本')
             print('0.返回')
-    elif game_mode == 'game_explain':
+        elif main_input == '9':
+            game_mode = 'warehouse'
+            print('拥有可交易黄金9999：',game.get_gold(),'g','\n目前不可交易黄金：0','g')
+            print('0.退出')
+    elif game_mode == 'game_explain' or game_mode == 'warehouse':
         if keyboard.is_pressed('0'):
             game_mode = 'main'
             main_print()
@@ -782,7 +846,7 @@ while True:
                 print('每一次你选择继续，系统都会给你奖励，奖励的金额会随着你选择继续的次数增加而增加')
                 print('如果你选择离开，你就可以获得当前的奖励，多少颗子弹影响奖励档位')
                 print('0.返回')
-    elif keyboard.is_pressed('0') and game_mode == 'game_3_explain':
+    elif main_input == '0' and game_mode == 'game_3_explain':
                 game_mode = 'game_3'
                 game_mode_3()
                 time.sleep(1)
