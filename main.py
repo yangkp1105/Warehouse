@@ -11,9 +11,9 @@ import importlib.util
 import requests
 from datetime import datetime, timedelta
 
-
 pyc_path_bj = r'__pycache__\blackjack.pyc'  # 使用完整路径
 pyc_path_gold = r'__pycache__\gold_money.cpython-313.pyc'
+pyc_path_international_currency = r'__pycache__\international_currency.cpython-313.pyc'
 # 加载模块
 spec_1 = importlib.util.spec_from_file_location('blackjack', pyc_path_bj)
 blackjack = importlib.util.module_from_spec(spec_1)
@@ -22,6 +22,10 @@ spec_1.loader.exec_module(blackjack)
 spec_2 = importlib.util.spec_from_file_location('blackjack', pyc_path_gold)
 gold = importlib.util.module_from_spec(spec_2)
 spec_2.loader.exec_module(gold)
+
+spec_3 = importlib.util.spec_from_file_location('blackjack', pyc_path_international_currency)
+international_currency = importlib.util.module_from_spec(spec_3)
+spec_3.loader.exec_module(international_currency)
 
 levels_num_book={'1': 500,#字典数字等级对应{'x+1'级}方便写代码
                  '2': 2000,
@@ -197,6 +201,10 @@ class Game:
     def load_data(self):#加载数据
         initial_data = {
             'money': self.encrypt_money(1000),  # 加密存储
+            'GBP':0,
+            'EGP':0,
+            'HKP':0,
+            'JPY':0,
             'gold': self.encrypt_gold(0),
             'levels': 1,
             'levels_num': 0,
@@ -681,6 +689,13 @@ def pp():
     time.sleep(3)
     exit()
 
+def set_console_size(width, height):#设置控制台窗口大小（Windows）
+    try:
+        # 使用mode命令设置控制台大小
+        os.system(f'mode con: cols={width} lines={height}')
+    except Exception as e:
+        return False
+
 def start_texas_holdem():
     """启动德州扑克游戏"""
     import subprocess
@@ -743,22 +758,8 @@ while True:
     if game_mode == 'main':
         main_input = str(input('在游戏大厅按对应数字键选择游戏，进入后按照提示操作即可：'))
         if main_input == '1':
-            game_mode = 'transaction'
             print('你选择了交易所')
-            print('')
-            print('')
-            print("每日第一次打开将会获取昨日的真实数据来填充交易所")
-            print('1.黄金')
-            print('2.股票')
-            print('0.退出')
-            input_1 = int(input('请输入数字:'))
-            if input_1 == 1:
-                gold.take_gold_money()
-            elif input_1 == 2:
-                pp()
-            elif input_1 == 0:
-                main_print()
-                game_mode = 'main'
+            game_mode = 'transaction'
             time.sleep(1)  # 防止重复触发
         elif main_input == '2':
             print('你选择了德*扑克')
@@ -801,7 +802,7 @@ while True:
         elif main_input == '8':
             game_mode = 'game_explain'
             print('***************************************************************************************************')
-            print('游戏版本：v1.0.7online  发布时间：2026/3/4')
+            print('游戏版本：v1.0.8online  发布时间：2026/3/6')
             print('广州市第二中学2023届230516开发')
             print('作者的话：')
             print('写这个游戏其实有小学的因素，我在小学机房里面留下的CS1.6，给很多我下几届的学生带来一点娱乐')
@@ -817,10 +818,16 @@ while True:
             print('v1.0.5beta 2026/2/28 修复了一些连接问题，增加德州扑克游戏插件（github开源项目）')
             print('v1.0.16 2026/3/3 选项1名称改为“交易所”，添加真实的黄金售价数据进入游戏，每天第一次打开交易所将会获取真实数据，游戏内当天每过一个月将会随机算法输出数据\n，此功能仅会在online版本上线。单机版采用随机算法')
             print('v1.0.7online 2026/3/4 丰富交易所界面。主菜单增加9——仓库功能，游戏正式进入online版本')
+            print('v1.0.8online 2026/3/6 交易所添加真实外汇交易，但是有高税，目前支持港元、英镑、埃及镑、日元交易')
             print('0.返回')
         elif main_input == '9':
+            set_console_size(30,60)
             game_mode = 'warehouse'
             print('拥有可交易黄金9999：',game.get_gold(),'g','\n目前不可交易黄金：0','g')
+            print('可交易日元：')
+            print('可交易埃及镑：')
+            print('可交易英镑：')
+            print('可交易港元：')
             print('0.退出')
     elif game_mode == 'game_explain' or game_mode == 'warehouse':
         if keyboard.is_pressed('0'):
@@ -996,6 +1003,34 @@ while True:
                 game_mode = 'blackjack'
                 blackjack.bj_print()
                 time.sleep(1)
+    elif game_mode == 'transaction':
+            print('你选择了交易所')
+            print('')
+            print('')
+            print("每日第一次打开将会获取昨日的真实数据来填充交易所")
+            print('1.黄金/外币汇率（真实数据每日只会更新一次）')
+            print('2.股票')
+            print('0.退出')
+            time.sleep(0.2)
+            input_1 = int(input('请输入数字:'))
+            if input_1 == 1:
+                set_console_size(40,60)
+                gold.take_gold_money()
+                international_currency.exchange_currency_GBP()
+                international_currency.exchange_currency_EGP()
+                international_currency.exchange_currency_HKD()
+                international_currency.exchange_currency_JPY()
+                gold_transaction = str(input('请输入交易序列号\n（序列号为顺序个数，第一个为0）\n输如"e"返回：'))
+                if gold_transaction == 'e':
+                    set_console_size(120,40)
+                    game_mode == 'main'
+                    game_mode == 'transaction'
+            elif input_1 == 2:
+                pp()
+            elif input_1 == 0:
+                set_console_size(120,40)
+                main_print()
+                game_mode = 'main'
 
 
 
