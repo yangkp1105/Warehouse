@@ -11,21 +11,56 @@ import importlib.util
 import requests
 from datetime import datetime, timedelta
 
-pyc_path_bj = r'__pycache__\blackjack.pyc'  # 使用完整路径
-pyc_path_gold = r'__pycache__\gold_money.cpython-313.pyc'
-pyc_path_international_currency = r'__pycache__\international_currency.cpython-313.pyc'
+File = int(0)
+
+try:
+    pyc_path_bj = r'__pycache__\blackjack.pyc'  # 使用完整路径
+except FileNotFoundError:
+    No_File = int(1)
+    File = int(1)
+try:
+    pyc_path_gold = r'__pycache__\gold_money.cpython-313.pyc'
+except FileNotFoundError:
+    No_File = int(2)
+    File = int(1)
+try:
+    pyc_path_international_currency = r'__pycache__\international_currency.cpython-313.pyc'
+except FileNotFoundError:
+    No_File = int(3)
+    File = int(1)
+
 # 加载模块
-spec_1 = importlib.util.spec_from_file_location('blackjack', pyc_path_bj)
-blackjack = importlib.util.module_from_spec(spec_1)
-spec_1.loader.exec_module(blackjack)
+try:
+    spec_1 = importlib.util.spec_from_file_location('blackjack', pyc_path_bj)
+    blackjack = importlib.util.module_from_spec(spec_1)
+    spec_1.loader.exec_module(blackjack)
 
-spec_2 = importlib.util.spec_from_file_location('blackjack', pyc_path_gold)
-gold = importlib.util.module_from_spec(spec_2)
-spec_2.loader.exec_module(gold)
+    spec_2 = importlib.util.spec_from_file_location('blackjack', pyc_path_gold)
+    gold = importlib.util.module_from_spec(spec_2)
+    spec_2.loader.exec_module(gold)
 
-spec_3 = importlib.util.spec_from_file_location('blackjack', pyc_path_international_currency)
-international_currency = importlib.util.module_from_spec(spec_3)
-spec_3.loader.exec_module(international_currency)
+    spec_3 = importlib.util.spec_from_file_location('blackjack', pyc_path_international_currency)
+    international_currency = importlib.util.module_from_spec(spec_3)
+    spec_3.loader.exec_module(international_currency)
+except FileNotFoundError:
+    File = int(1)
+    No_File = int(114514)
+
+if File == 1:
+    if No_File == 1:
+        print(f"找不到{pyc_path_bj}文件，请重新解压文件，或者获取游戏文件")
+        time.sleep(3)
+        exit()
+    elif No_File == 2:
+        print(f"找不到{pyc_path_gold}文件，请重新解压文件，或者获取游戏文件")
+        time.sleep(3)
+        exit()
+    elif No_File == 3:
+        print(f"找不到{pyc_path_international_currency}文件，请重新解压文件，或者获取游戏文件")
+        time.sleep(3)
+        exit()
+    else:
+        print('缺失pyc文件，请检查')
 
 levels_num_book={'1': 500,#字典数字等级对应{'x+1'级}方便写代码
                  '2': 2000,
@@ -133,7 +168,9 @@ class Game:
     def encrypt_gold(self, gold):#加密黄金
         gold_str = str(gold)
         encrypted = self.cipher.encrypt(gold_str.encode())
-        return encrypted.decode()
+        # 将 bytes 转换为 base64 字符串
+        import base64
+        return base64.b64encode(encrypted).decode('utf-8')
     
     def decrypt_money(self, encrypted_money):#解密金钱
         try:
@@ -175,7 +212,7 @@ class Game:
         # 其他情况返回默认值
         return 1000
     
-    def set_gold(self, new_gold):#设置加密后的金钱
+    def set_gold(self, new_gold):#设置加密后的黄金
         if isinstance(new_gold, int):
             self.data['gold'] = self.encrypt_money(new_gold)
         else:
@@ -198,13 +235,69 @@ class Game:
                 # 解密失败返回默认值
                 return 0
 
+    def _encrypt_value(self, value: int) -> str:#货币
+        """将整数加密为字符串（统一使用 Fernet）"""
+        return self.cipher.encrypt(str(value).encode()).decode()
+
+    def _decrypt_value(self, encrypted: str) -> int:#货币
+        """将加密字符串解密为整数"""
+        try:
+            return int(self.cipher.decrypt(encrypted.encode()).decode())
+        except:
+            return 0
+
+    def get_currency(self, name: str) -> int:#货币
+        """获取指定货币的余额（解密后）"""
+        value = self.data.get(name, 0)
+        if isinstance(value, int):
+            # 旧数据迁移：自动加密并保存
+            encrypted = self._encrypt_value(value)
+            self.data[name] = encrypted
+            self.save_data()
+            return value
+        return self._decrypt_value(value)
+
+    def set_currency(self, name: str, amount: int):#货币
+        """设置指定货币的余额（加密保存）"""
+        self.data[name] = self._encrypt_value(amount)
+        self.save_data()
+
+    def add_currency(self, name: str, amount: int) -> int:#货币
+        """增加指定货币的余额，返回新余额"""
+        current = self.get_currency(name)
+        new_value = current + amount
+        self.set_currency(name, new_value)
+        return new_value
+
+    def subtract_currency(self, name: str, amount: int) -> bool:#货币
+        """减少指定货币的余额，成功返回 True，余额不足返回 False"""
+        current = self.get_currency(name)
+        if current >= amount:
+            new_value = current - amount
+            self.set_currency(name, new_value)
+            return True
+        return False
+
+    def _encrypt_value(self, value: int) -> str:#货币
+        """将整数加密为字符串（返回 Base64 字符串）"""
+        encrypted = self.cipher.encrypt(str(value).encode())
+        return encrypted.decode()  # 直接返回字符串，与 encrypt_money 保持一致
+
+    def _decrypt_value(self, encrypted: str) -> int:#货币
+        """将加密字符串解密为整数，失败返回 0"""
+        try:
+            decrypted = self.cipher.decrypt(encrypted.encode())
+            return int(decrypted.decode())
+        except Exception:
+            return 0
+
     def load_data(self):#加载数据
         initial_data = {
             'money': self.encrypt_money(1000),  # 加密存储
-            'GBP':0,
-            'EGP':0,
-            'HKP':0,
-            'JPY':0,
+            'GBP':self._encrypt_value(0),
+            'EGP':self._encrypt_value(0),
+            'HKP':self._encrypt_value(0),
+            'JPY':self._encrypt_value(0),
             'gold': self.encrypt_gold(0),
             'levels': 1,
             'levels_num': 0,
@@ -216,23 +309,39 @@ class Game:
             'individual_have_borronw': 0,
             'xx_have_borronw': 0,
         }
-        
-        if not os.path.exists(self.js_file):
-            with open(self.js_file, 'w', encoding='utf-8') as f:
-                json.dump(initial_data, f, indent=4, ensure_ascii=False)
-            return initial_data.copy()
-        else:
-            with open(self.js_file, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            if 'money' in data:
-            # 如果 money 是整数，说明是旧数据，需要重新加密
-                if isinstance(data['money'], int):
+        try:
+            if not os.path.exists(self.js_file):
+                # 文件不存在，创建新文件
+                with open(self.js_file, 'w', encoding='utf-8') as f:
+                    json.dump(initial_data, f, indent=4, ensure_ascii=False)
+                return initial_data.copy()  # 返回字典
+            else:
+                # 文件存在，读取文件
+                with open(self.js_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                
+                # 确保 data 是字典
+                if not isinstance(data, dict):
+                    print("警告：数据格式错误，使用初始数据")
+                    return initial_data.copy()
+                
+                # 数据迁移逻辑
+                if 'money' in data and isinstance(data['money'], int):
                     print("检测到旧数据格式，正在转换金钱加密格式...")
                     data['money'] = self.encrypt_money(data['money'])
-        
-        return data
+                
+                # 确保 gold 字段存在
+                if 'gold' not in data:
+                    print("添加缺失的 gold 字段...")
+                    data['gold'] = self.encrypt_gold(0)
+                
+                return data  # 返回字典
+        except Exception as e:
+            print(f"加载数据时出错: {e}")
+            print("使用初始数据继续运行")
+            return initial_data.copy()  # 出错时返回初始数据
     
-    def save_data(self):
+    def save_data(self):#保存数据
         with open(self.js_file, 'w', encoding='utf-8') as f:
             json.dump(self.data, f, indent=4, ensure_ascii=False)
     
@@ -291,6 +400,9 @@ class Game:
     def wait_for_any_key(self):
         keyboard.read_key()
         time.sleep(0.2)
+
+#class Encryption:######################################################
+    #def encrypt_money(self, currency)
 
 class PokerGame:
     def __init__(self):
@@ -471,6 +583,7 @@ def game_mode_3_start():
                 print(f"*你获得了{math.floor(user_price_dict[turn_key])}$,缴纳手续费后实际获得{math.floor(user_price_dict[turn_key]) - (math.floor(user_price_dict[turn_key] * level_return_money_book[str(game.data['levels'])]))}$")
                 print(f"*你获得了{math.floor(user_price_dict[turn_key] // 20)}经验")
                 print(f"***************************************************************")
+                game.save_data()
                 if game.level_up():
                     print('恭喜你升级了！')
                 game.save_data()
@@ -756,7 +869,13 @@ game_mode = 'main'
 
 while True:
     if game_mode == 'main':
-        main_input = str(input('在游戏大厅按对应数字键选择游戏，进入后按照提示操作即可：'))
+        try:
+            main_input = str(input('在游戏大厅按对应数字键选择游戏，进入后按照提示操作即可：'))
+        except ValueError:
+            print('请输入整数')
+            game_mode == 'nothing'
+            game_mode == 'main'
+            main_print()
         if main_input == '1':
             print('你选择了交易所')
             game_mode = 'transaction'
@@ -802,7 +921,7 @@ while True:
         elif main_input == '8':
             game_mode = 'game_explain'
             print('***************************************************************************************************')
-            print('游戏版本：v1.0.8online  发布时间：2026/3/6')
+            print('游戏版本：v1.0.9online  发布时间：2026/3/19')
             print('广州市第二中学2023届230516开发')
             print('作者的话：')
             print('写这个游戏其实有小学的因素，我在小学机房里面留下的CS1.6，给很多我下几届的学生带来一点娱乐')
@@ -819,16 +938,23 @@ while True:
             print('v1.0.16 2026/3/3 选项1名称改为“交易所”，添加真实的黄金售价数据进入游戏，每天第一次打开交易所将会获取真实数据，游戏内当天每过一个月将会随机算法输出数据\n，此功能仅会在online版本上线。单机版采用随机算法')
             print('v1.0.7online 2026/3/4 丰富交易所界面。主菜单增加9——仓库功能，游戏正式进入online版本')
             print('v1.0.8online 2026/3/6 交易所添加真实外汇交易，但是有高税，目前支持港元、英镑、埃及镑、日元交易')
+            print('v1.0.9online 2026/3/19 增加货币交易加密，和储存加密，管理员模式已添加修改功能')
             print('0.返回')
         elif main_input == '9':
             set_console_size(30,60)
             game_mode = 'warehouse'
             print('拥有可交易黄金9999：',game.get_gold(),'g','\n目前不可交易黄金：0','g')
-            print('可交易日元：')
-            print('可交易埃及镑：')
-            print('可交易英镑：')
-            print('可交易港元：')
+            print('可交易日元：',game.get_currency('JPY'),'元')
+            print('可交易埃及镑：',game.get_currency('EGP'),'元')
+            print('可交易英镑：',game.get_currency('GBP'),'元')
+            print('可交易港元：',game.get_currency('HKP'),'元')
             print('0.退出')
+        else:#判断是否有菜单中的序列号
+            print('无法查找到菜单序列号对象')
+            game_mode = 'nothing'
+            game_mode = 'main'
+            main_print()
+            time.sleep(0.5)
     elif game_mode == 'game_explain' or game_mode == 'warehouse':
         if keyboard.is_pressed('0'):
             game_mode = 'main'
@@ -857,7 +983,7 @@ while True:
                 game_mode = 'game_3'
                 game_mode_3()
                 time.sleep(1)
-    elif game_mode == 'admin':
+    elif game_mode == 'admin':#管理员
         if keyboard.is_pressed('1'):
                 new_password = input('请输入新的管理员密码: ')
                 # 直接加密并保存新密码
@@ -867,6 +993,14 @@ while True:
                 admin_print()
                 time.sleep(1)
         elif keyboard.is_pressed('2'):
+            print('1.修改基础数据')
+            print('2.修改仓库数据')
+            try:
+                admin_input = int(input('请输入菜单选项：'))
+            except ValueError:
+                print('输入格式错误')
+                continue
+            if admin_input == 1:
                 current_money = game.data['money']
                 current_levels = game.data['levels']
                 current_levels_num = game.data['levels_num']
@@ -900,6 +1034,7 @@ while True:
                     new_month_turn = current_month_turn
                 # 更新数据
                 game.data['money'] = new_money
+                game.set_money(new_money)
                 game.data['levels'] = new_levels
                 game.data['levels_num'] = new_levels_num
                 game.data['month'] = new_month
@@ -907,6 +1042,51 @@ while True:
                 game.save_data()
                 admin_print()
                 time.sleep(1)
+            elif admin_input == 2:#修改仓库
+                print("===== 修改货币数量 =====")
+                print("1. 修改英镑 (GBP)")
+                print("2. 修改埃及镑 (EGP)")
+                print("3. 修改港元 (HKP)")
+                print("4. 修改日元 (JPY)")
+                print("0. 返回")
+                
+                try:
+                    currency_choice = int(input("请选择要修改的货币: "))
+                except Exception:
+                    print('输入错误')
+                    continue
+
+                if currency_choice == 0:
+                    game_mode = 'nothing'
+                    for i in range(10):
+                        print('')
+                    game_mode = 'admin'
+                    admin_print()
+                    
+                elif currency_choice == 1:
+                    current = game.get_currency('GBP')
+                    new_value = input(f"当前英镑: {current}, 请输入新数量: ")
+                    if new_value.strip():
+                        game.set_currency('GBP', int(new_value))
+                        print(f"英镑已设置为 {new_value}")
+                elif currency_choice == 2:
+                    current = game.get_currency('EGP')
+                    new_value = input(f"当前埃及镑: {current}, 请输入新数量: ")
+                    if new_value.strip():
+                        game.set_currency('EGP', int(new_value))
+                elif currency_choice == 3:
+                    current = game.get_currency('HKP')
+                    new_value = input(f"当前港元: {current}, 请输入新数量: ")
+                    if new_value.strip():
+                        game.set_currency('HKP', int(new_value))
+                elif currency_choice == 4:
+                    current = game.get_currency('JPY')
+                    new_value = input(f"当前日元: {current}, 请输入新数量: ")
+                    if new_value.strip():
+                        game.set_currency('JPY', int(new_value))
+                else:
+                    print('未找到有效对象')
+                    continue
         elif keyboard.is_pressed('3'):
                 game.data['money'] = 1000000
                 game.data['levels'] = 1
