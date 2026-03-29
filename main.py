@@ -455,12 +455,24 @@ class PokerGame:
         self.drawn_cards = []
         self.card_counts = self.init_card_counts()
 
+class Transaction:
+    def sell_print():
+        print('1.出售')
+        print('2.购买')
+
+    def buy():
+        print('请输入购入目标货币数量')
+        game = Game('data.json', 'secret.key')
+
+
 poker = PokerGame()
+transaction = Transaction()
 game = Game('data.json', 'secret.key')
 
-print('广州市第二中学2023届230516开发')
 print(
-      '尊重版权，禁止盗版，本游戏仅供学习交流使用，禁止用于商业用途，违者必究！')
+    '广州市第二中学2023届230516开发')
+print(
+     '尊重版权，禁止盗版，本游戏仅供学习交流使用，禁止用于商业用途，违者必究！')
 print(
       'Money Games是一款虚拟游戏，游戏中的货币和等级仅供娱乐使用，不具有任何实际价值。')
 print(
@@ -487,6 +499,7 @@ def main_print():
     print('4.二十一点')
     print('======玩家选项======')
     print('9.仓库')
+    print('\help.指令说明')
     print('======其他功能======')
     print('5.借money')
     print('6.管理员模式')
@@ -810,7 +823,7 @@ def set_console_size(width, height):#设置控制台窗口大小（Windows）
         return False
 
 def start_texas_holdem():
-    """启动德州扑克游戏"""
+    #启动德州扑克游戏
     import subprocess
     import os
     import time
@@ -870,27 +883,28 @@ game_mode = 'main'
 while True:
     if game_mode == 'main':
         try:
-            main_input = str(input('在游戏大厅按对应数字键选择游戏，进入后按照提示操作即可：'))
+            main_input = str(input("在游戏大厅按对应数字键选择游戏，进入后按照提示操作即可："))
+            main_menu_input = None
         except ValueError:
             print('请输入整数')
             game_mode == 'nothing'
             game_mode == 'main'
             main_print()
-        if main_input == '1':
+        if main_input == '1' or main_menu_input == '1':
             print('你选择了交易所')
             game_mode = 'transaction'
             time.sleep(1)  # 防止重复触发
-        elif main_input == '2':
+        elif main_input == '2' or main_menu_input == '2':
             print('你选择了德*扑克')
             start_texas_holdem()
                 # 在这里添加德*扑克游戏的逻辑
             time.sleep(1)
-        elif main_input == '3':
+        elif main_input == '3' or main_menu_input == '3':
             print('你选择了俄罗斯*轮盘')
             game_mode_3()
             game_mode = 'game_3'
             time.sleep(1)
-        elif main_input == '4':
+        elif main_input == '4' or main_menu_input == '4':
             print('你选择了二十一点')
             game_mode = 'blackjack'
             while keyboard.is_pressed('4'):
@@ -901,27 +915,26 @@ while True:
             time.sleep(0.2)
                 # 在这里添加二十一点游戏的逻辑
             time.sleep(1)
-        elif main_input == '5':#借钱
+        elif main_input == '5' or main_menu_input == '5':#借钱
             game_mode = 'get_money'
             print('你选择了借money')
             get_money()
             time.sleep(1)
-        elif main_input == '6':
+        elif main_input == '6' or main_menu_input == '6':#管理员
             print('进入管理员模式')
             password_input = input(str('请输入管理员密码: '))
             if game.verify_password(password_input):
                 game_mode = 'admin'
-                admin_print()
             else:
                 print('密码错误')
                 main_print()
             time.sleep(1)
-        elif main_input == '7':
+        elif main_input == '7' or main_menu_input == '7':
             exit()
-        elif main_input == '8':
+        elif main_input == '8' or main_menu_input == '8':
             game_mode = 'game_explain'
             print('***************************************************************************************************')
-            print('游戏版本：v1.0.9online  发布时间：2026/3/19')
+            print('游戏版本：v1.0.92小版本  发布时间：2026/3/21')
             print('广州市第二中学2023届230516开发')
             print('作者的话：')
             print('写这个游戏其实有小学的因素，我在小学机房里面留下的CS1.6，给很多我下几届的学生带来一点娱乐')
@@ -940,7 +953,7 @@ while True:
             print('v1.0.8online 2026/3/6 交易所添加真实外汇交易，但是有高税，目前支持港元、英镑、埃及镑、日元交易')
             print('v1.0.9online 2026/3/19 增加货币交易加密，和储存加密，管理员模式已添加修改功能')
             print('0.返回')
-        elif main_input == '9':
+        elif main_input == '9' or main_menu_input == '9':#仓库
             set_console_size(30,60)
             game_mode = 'warehouse'
             print('拥有可交易黄金9999：',game.get_gold(),'g','\n目前不可交易黄金：0','g')
@@ -949,14 +962,36 @@ while True:
             print('可交易英镑：',game.get_currency('GBP'),'元')
             print('可交易港元：',game.get_currency('HKP'),'元')
             print('0.退出')
+        elif main_input.count('\\') > 0:#判断指令符号
+            if "help" in main_input:#帮助
+                game_mode = 'nothing'
+                os.system('cls')
+                print('\next 下一个月')
+                print('0.返回')
+                if keyboard.is_pressed('0'):
+                    game_mode = 'main'
+                    main_print()
+                    time.sleep(1)
+            elif "next" in main_input:#下一个月
+                game.data['month'] += 1
+                game.data['month_turn'] = 0
+                game.save_data()
+                print('执行中...')
+                time.sleep(1)
+                os.system('cls')
+                main_print()
+            else:#无命令处理
+                print(main_input,'无法查找到指令对象')
+                game_mode = 'main'
+                time.sleep(0.5)
         else:#判断是否有菜单中的序列号
             print('无法查找到菜单序列号对象')
             game_mode = 'nothing'
             game_mode = 'main'
-            main_print()
             time.sleep(0.5)
     elif game_mode == 'game_explain' or game_mode == 'warehouse':
         if keyboard.is_pressed('0'):
+            set_console_size(120,40)
             game_mode = 'main'
             main_print()
             time.sleep(1)
@@ -984,6 +1019,7 @@ while True:
                 game_mode_3()
                 time.sleep(1)
     elif game_mode == 'admin':#管理员
+        admin_print()
         if keyboard.is_pressed('1'):
                 new_password = input('请输入新的管理员密码: ')
                 # 直接加密并保存新密码
@@ -1048,6 +1084,7 @@ while True:
                 print("2. 修改埃及镑 (EGP)")
                 print("3. 修改港元 (HKP)")
                 print("4. 修改日元 (JPY)")
+                print('5. 修改黄金 (99.99%)')
                 print("0. 返回")
                 
                 try:
@@ -1084,10 +1121,17 @@ while True:
                     new_value = input(f"当前日元: {current}, 请输入新数量: ")
                     if new_value.strip():
                         game.set_currency('JPY', int(new_value))
+                elif currency_choice == 5:
+                    current = game.get_gold()
+                    new_value = input(f"当前黄金99.99%：{current}，请输入新数量:")
+                    if new_value.strip():
+                        game.set_gold(int(current))
                 else:
                     print('未找到有效对象')
                     continue
-        elif keyboard.is_pressed('3'):
+                game_mode = 'nothing'
+                game_mode = 'admin'
+        elif keyboard.is_pressed('3'):#重置    增加金钱重置
                 game.data['money'] = 1000000
                 game.data['levels'] = 1
                 game.data['levels_num'] = 0
@@ -1096,6 +1140,7 @@ while True:
                 game.data['bank_have_borronw'] = 0
                 game.data['individual_have_borronw'] = 0
                 game.data['xx_have_borronw'] = 0
+                
                 game.save_data()
                 print('玩家数据已重置')
                 admin_print()
@@ -1183,17 +1228,21 @@ while True:
                 game_mode = 'blackjack'
                 blackjack.bj_print()
                 time.sleep(1)
-    elif game_mode == 'transaction':
+    elif game_mode == 'transaction':#交易所逻辑
             print('你选择了交易所')
             print('')
             print('')
             print("每日第一次打开将会获取昨日的真实数据来填充交易所")
             print('1.黄金/外币汇率（真实数据每日只会更新一次）')
-            print('2.股票')
+            print('2.虚拟股票')
             print('0.退出')
             time.sleep(0.2)
-            input_1 = int(input('请输入数字:'))
-            if input_1 == 1:
+            try:                
+                input_1 = int(input('请输入数字:'))
+            except ValueError:
+                print('请输入整数')
+                continue
+            if input_1 == 1:#黄金、外汇交易逻辑
                 set_console_size(40,60)
                 gold.take_gold_money()
                 international_currency.exchange_currency_GBP()
@@ -1205,7 +1254,11 @@ while True:
                     set_console_size(120,40)
                     game_mode == 'main'
                     game_mode == 'transaction'
-            elif input_1 == 2:
+                elif gold_transaction == '0':
+                    print('='*10,"GBP交易",'='*10)
+                    transaction.sell_print()
+
+            elif input_1 == 2:#虚拟股票交易逻辑
                 pp()
             elif input_1 == 0:
                 set_console_size(120,40)
@@ -1214,7 +1267,7 @@ while True:
 
 
 
-
+#判断交易逻辑
 
 
 #检验21点的AI_bj()输出情况
