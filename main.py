@@ -299,15 +299,21 @@ class Game:
             'HKP':self._encrypt_value(0),
             'JPY':self._encrypt_value(0),
             'gold': self.encrypt_gold(0),
+            'bank_borrow_money': self.encrypt_money(0),
+            'individual_borrow_money': self.encrypt_money(0),
+            'xx_borrow_money': self.encrypt_money(0),
             'levels': 1,
             'levels_num': 0,
             'month': 0,
             'month_turn': 0,
             'password': self.hash_password('admin123'),
             'invincible_mode': 0,
-            'bank_have_borronw': 0,
-            'individual_have_borronw': 0,
-            'xx_have_borronw': 0,
+            'bank_have_borrow': 0,
+            'individual_have_borrow': 0,
+            'xx_have_borrow': 0,
+            "bank_borrow_month": 0,
+            "individual_borrow_month": 0,
+            "xx_borrow_month": 0
         }
         try:
             if not os.path.exists(self.js_file):
@@ -393,6 +399,9 @@ class Game:
     
     def month_turn_up(self):
         if self.data['month_turn'] == 2:
+            if self.get_currency('xx_borrow_money') < self.get_money():
+                os.system('cls')
+                print('你没有能力，xx科技公司追杀了你！')#####
             self.data['month'] += 1
             self.data['month_turn'] = 0
             self.save_data()
@@ -456,6 +465,13 @@ class PokerGame:
         self.card_counts = self.init_card_counts()
 
 class Transaction:
+    CURRENCY_NAMES = {
+        'GBP': '英镑',
+        'EGP': '埃及镑',
+        'HKD': '港元',
+        'JPY': '日元'
+    }
+
     def sell_print():
         print('1.出售')
         print('2.购买')
@@ -464,9 +480,121 @@ class Transaction:
         print('请输入购入目标货币数量')
         game = Game('data.json', 'secret.key')
 
+    @staticmethod
+    def get_current_rate(from_currency='USD', to_currency='GBP', amount=100):
+        """
+        获取当前汇率（实时）
+        返回：每 1 USD 可兑换的目标货币数量
+        """
+        url = "https://cn.apihz.cn/api/jinrong/huilv.php"
+        params = {
+            'id': '10013485',
+            'key': '3ff8fcfb1a499f123ad43092ef605f15',
+            'from': from_currency,
+            'to': to_currency,
+            'money': str(amount)
+        }
+        try:
+            response = requests.get(url, params=params, timeout=5)
+            if response.status_code == 200:
+                result = response.json()
+                if result.get('code') == 200:
+                    # rate 是 amount 美元可兑换的目标货币数量
+                    rate_per_amount = float(result.get('rate', 0))
+                    # 计算 1 美元可兑换多少目标货币
+                    rate_per_usd = rate_per_amount / amount
+                    return rate_per_usd
+        except Exception as e:
+            print(f"获取汇率失败: {e}")
+        return None
+
+    @staticmethod
+    def buy_currency(game, currency_code, quantity):
+        """
+        购买外汇
+        :param game: Game 实例
+        :param currency_code: 货币代码 ('GBP', 'EGP', 'HKD', 'JPY')
+        :param quantity: 要购买的数量（目标货币单位）
+        :return: (success, message)
+        """
+        # 检查货币代码是否支持
+        if currency_code not in Transaction.CURRENCY_NAMES:
+            return False, f"不支持的货币类型: {currency_code}"
+        
+        # 获取实时汇率（1 USD 可兑换多少目标货币）
+        rate = Transaction.get_current_rate('USD', currency_code)
+        if rate is None:
+            return False, "获取汇率失败，请稍后再试"
+        
+        # 计算所需美元金额
+        needed_usd = quantity / rate
+        needed_usd = round(needed_usd, 2)  # 保留两位小数
+        
+        # 获取当前美元余额
+        current_usd = game.get_money()
+        
+        if current_usd < needed_usd:
+            return False, f"余额不足！需要 {needed_usd} 美元，当前只有 {current_usd} 美元"
+        
+        # 扣减美元
+        if not game.subtract_money(needed_usd):
+            return False, "扣款失败，请重试"
+        
+        # 增加目标货币
+        current_currency = game.get_currency(currency_code)
+        game.set_currency(currency_code, current_currency + quantity)
+        
+        # 增加经验（购买金额的 1/20 作为经验，与原游戏规则一致）
+        exp_gain = int(needed_usd // 10)
+        game.data['levels_num'] += exp_gain
+        game.level_up()  # 检查升级
+        game.save_data()
+        
+        return True, f"成功购买 {quantity} {Transaction.CURRENCY_NAMES[currency_code]}，花费 {needed_usd} 美元，获得 {exp_gain} 经验"
+
+    @staticmethod
+    def sell_currency(game, currency_code, quantity):
+        """
+        出售外汇（反向操作）
+        :param game: Game 实例
+        :param currency_code: 货币代码
+        :param quantity: 要出售的数量
+        :return: (success, message)
+        """
+        if currency_code not in Transaction.CURRENCY_NAMES:
+            return False, f"不支持的货币类型: {currency_code}"
+        
+        # 获取实时汇率（1 USD 可兑换多少目标货币）
+        rate = Transaction.get_current_rate('USD', currency_code)
+        if rate is None:
+            return False, "获取汇率失败，请稍后再试"
+        
+        # 检查仓库余额
+        current_currency = game.get_currency(currency_code)
+        if current_currency < quantity:
+            return False, f"{Transaction.CURRENCY_NAMES[currency_code]} 余额不足！当前持有 {current_currency}，欲出售 {quantity}"
+        
+        # 计算可获得的美元（注意：卖出价通常略低于买入价，这里简化使用同一汇率）
+        earned_usd = quantity / rate
+        earned_usd = round(earned_usd, 2)
+        
+        # 增加美元
+        game.add_money(earned_usd)
+        
+        # 减少目标货币
+        game.set_currency(currency_code, current_currency - quantity)
+        
+        # 增加经验（卖出所得美元同样计算经验）
+        exp_gain = int(earned_usd // 10)
+        game.data['levels_num'] += exp_gain
+        game.level_up()
+        game.save_data()
+        
+        return True, f"成功出售 {quantity} {Transaction.CURRENCY_NAMES[currency_code]}，获得 {earned_usd} 美元，增加 {exp_gain} 经验"
+
 
 poker = PokerGame()
-transaction = Transaction()
+transaction = Transaction()     
 game = Game('data.json', 'secret.key')
 
 print(
@@ -645,8 +773,9 @@ def bj_4():
         print('您无法进场')
         return False
 
-def get_money():
+def get_money():#借钱
     print('银行最多可以借你的资产*(0.6*等级)，但是利率低。个人最多可以借你的资产*(0.9*等级)，利率中。xx科技公司可以借无上限，但是利率很高。')
+    print('!!!!!!!!!!!!!xx科技公司拖债务你会被追杀!!!!!!!!!!!!!!')
     print('默认在第八个月时还款，你也可以选择提前还款')
     print('利率表：银行每月1%，个人每月4%，xx科技公司每月10%')
     print('1.bank')
@@ -655,159 +784,195 @@ def get_money():
     print('4.还款')
     print('0.返回')
     while True:
-        if keyboard.is_pressed('1'):
-            print('你选择了bank')
-            print('你可以借的金额上限为:',math.floor(game.data['money'] * (0.6 * game.data['levels'])),'$')
-            bank_borrow_money = int(input('请输入你要借的金额:(输入0块钱可以返回) '))
-            if bank_borrow_money <= math.floor(game.data['money'] * (0.6 * game.data['levels'])):
-                game.add_money(bank_borrow_money)
-                game.data['bank_have_borronw'] = 1
-                bank_borrow_month = game.data['month']
-                print('借款成功！')
-                print('请在',bank_borrow_month + 8,'月之前还款！')
-                print('摁任意键返回游戏大厅')
-                if game.wait_for_any_key():
-                    return False
-            elif bank_borrow_money >= math.floor(game.data['money'] * (0.6 * game.data['levels'])):
-                print('借款失败，超过上限！')
-            elif game.data['bank_have_borronw'] == 1:
-                print('请先还款！')
-            elif bank_borrow_money == 0:
+        try:
+            get_money_choice = int(input('请输入: '))
+        except ValueError:
+            print('请输入数字（0-4）')
+        else:
+            if get_money_choice == 0:#退出
                 main_print()
                 return False
-            time.sleep(1)
-        elif keyboard.is_pressed('2'):
-            print('你选择了individual')
-            print('你可以借的金额上限为:',math.floor(game.data['money'] * (0.9 * game.data['levels'])),'$')
-            individual_borrow_money = int(input('请输入你要借的金额:(输入0块钱可以返回) '))
-            if individual_borrow_money <= math.floor(game.data['money'] * (0.9 * game.data['levels'])):
-                game.add_money(individual_borrow_money)
-                game.data['individual_have_borronw'] = 1
-                individual_borrow_month = game.data['month']
-                print('借款成功！')
-                print('请在',individual_borrow_month + 8,'月之前还款！')
-                print('摁任意键返回游戏大厅')
-                if game.wait_for_any_key():
+            elif get_money_choice == 1:#bank
+                print('你选择了bank')
+                if game.data['bank_have_borrow'] == 1:
+                    print('请先还款！')
+                print('你可以借的金额上限为:',math.floor(float(game.get_money()) * (0.6 * game.data['levels'])),'$')
+                bank_borrow_money = int(input('请输入你要借的金额:(输入0块钱可以返回) '))
+                if bank_borrow_money <= math.floor(float(game.get_money()) * (0.6 * game.data['levels'])):
+                    if bank_borrow_money == 0:
+                        return False
+                    game.add_money(bank_borrow_money)
+                    game.data['levels_num'] += math.floor(bank_borrow_money // 15 * (0.1 * game.data['levels']))
+                    game.add_currency('bank_borrow_money', bank_borrow_money)
+                    game.data['bank_have_borrow'] = 1
+                    game.data['bank_borrow_month'] = game.data['month']
+                    game.save_data()
+                    print('借款成功！')
+                    print('请在',game.data['bank_borrow_month'] + 8,'月之前还款！')
+                    print('摁0返回游戏大厅')
+                    if keyboard.is_pressed('0'):
+                        return False
+                elif bank_borrow_money >= math.floor(float(game.get_money()) * (0.6 * game.data['levels'])):
+                    print('借款失败，超过上限！')
+                elif game.data['bank_have_borrow'] == 1:
+                    print('请先还款！')
+                elif bank_borrow_money == 0:
+                    main_print()
                     return False
-            elif individual_borrow_money >= math.floor(game.data['money'] * (0.9 * game.data['levels'])):
-                print('借款失败，超过上限！')
-            elif game.data['individual_have_borronw'] == 1:
-                print('请先还款！')
-            elif individual_borrow_money == 0:
-                main_print()
-                return False
-            time.sleep(1)
-        elif keyboard.is_pressed('3'):
-            print('你选择了xx科技公司')
-            xx_borrow_money = int(input('请输入你要借的金额:(输入0块钱可以返回) '))
-            if xx_borrow_money > 0:
-                game.add_money(xx_borrow_money)
-                game.data['xx_have_borronw'] = 1
-                xx_borrow_month = game.data['month']
-                print('借款成功！')
-                print('请在',xx_borrow_month + 8,'月之前还款！')
-                print('摁任意键返回游戏大厅')
-                if game.wait_for_any_key():
+                time.sleep(1)
+            elif get_money_choice == 2:#individual
+                print('你选择了individual')
+                if game.data['individual_have_borrow'] == 1:
+                    print('请先还款！')
+                print('你可以借的金额上限为:',math.floor(float(game.get_money()) * (0.9 * game.data['levels'])),'$')
+                individual_borrow_money = int(input('请输入你要借的金额:(输入0块钱可以返回) '))
+                if individual_borrow_money <= math.floor(float(game.get_money()) * (0.9 * game.data['levels'])):
+                    if individual_borrow_money == 0:
+                        return False
+                    game.add_money(individual_borrow_money)
+                    game.data['levels_num'] += math.floor(individual_borrow_money // 13 * (0.1 * game.data['levels']))
+                    game.add_currency('individual_borrow_money', individual_borrow_money)
+                    game.data['individual_have_borrow'] = 1
+                    game.data['individual_borrow_month'] = game.data['month']
+                    game.save_data()
+                    print('借款成功！')
+                    print('请在',game.data['individual_borrow_month'] + 8,'月之前还款！')
+                    print('摁0返回游戏大厅')
+                    if keyboard.is_pressed('0'):
+                        return False
+                elif individual_borrow_money >= math.floor(float(game.get_money()) * (0.9 * game.data['levels'])):
+                    print('借款失败，超过上限！')
+                elif game.data['individual_have_borrow'] == 1:
+                    print('请先还款！')
+                elif individual_borrow_money == 0:
+                    main_print()
                     return False
-            elif game.data['xx_have_borronw'] == 1:
-                print('请先还款！')
-            elif xx_borrow_money == 0:
-                main_print()
-                return False
-            time.sleep(1)
-        elif keyboard.is_pressed('4'):
-            print('请选择你要还款的对象：'
-                  '1.bank 2.individual 3.xx科技公司')
-            repay_choice = input('请输入: ')
-            if repay_choice == '1':
-                if bank_have_borronw == 1:
-                    bank_one_month = game.data['month'] - bank_borrow_month
-                    if bank_one_month <= 1 :
-                        bank_one_month = 1
-                    else:
-                        bank_one_month = game.data['month'] - bank_borrow_month
-                        bank_repay_money = math.ceil(bank_borrow_money * (1 + 0.01 * bank_one_month))
+                time.sleep(1)
+            elif get_money_choice == 3:#xx
+                print('你选择了xx科技公司')
+                if game.data['xx_have_borrow'] == 1:
+                    print('请先还款！')
+                xx_borrow_money = int(input('请输入你要借的金额:(输入0块钱可以返回) '))
+                if xx_borrow_money > 0:
+                    if xx_borrow_money == 0:
+                        return False
+                    game.add_money(xx_borrow_money)
+                    game.data['levels_num'] += math.floor(xx_borrow_money // 11 * (0.1 * game.data['levels']))
+                    game.add_currency('xx_borrow_money', xx_borrow_money)
+                    game.data['xx_have_borrow'] = 1
+                    game.data['xx_borrow_month'] = game.data['month']
+                    game.save_data()
+                    print('借款成功！')
+                    print('请在',game.data['xx_borrow_month'] + 8,'月之前还款！')
+                    print('摁0返回游戏大厅')
+                    if keyboard.is_pressed('0'):
+                        return False
+                elif game.data['xx_have_borrow'] == 1:
+                    print('请先还款！')
+                elif xx_borrow_money == 0:
+                    return False
+                time.sleep(1)
+            elif get_money_choice == 4:#还款
+                print('请选择你要还款的对象：'
+                    '1.bank 2.individual 3.xx科技公司')
+                repay_choice = input('请输入: ')
+                if repay_choice == '1':
+                    if game.data['bank_have_borrow'] == 1:
+                        bank_one_month = game.data['month'] - game.data['bank_borrow_month']
+                        if bank_one_month <= 1 :
+                            bank_one_month = 1
+                        else:
+                            bank_one_month = game.data['month'] - game.data['bank_borrow_month']
+                        bank_repay_money = math.ceil(game.get_currency('bank_borrow_money') * (1 + 0.01 * bank_one_month))##################
                         print('你需要还款的金额为:',bank_repay_money,'$')
                         repay_money = int(input('请输入你要还款的金额: '))
-                        if repay_money > 0 and repay_money <= game.data['money']:
-                            game.subtract_money(repay_money)
-                            print('还款成功！')
-                            if repay_money >= bank_borrow_money * (1 + 0.01 * bank_one_month):
-                                bank_have_borronw=0
-                                print('你已经完全还清了bank的借款！')
-                            else:
-                                print('你还欠bank',math.ceil(bank_borrow_money * (1 + 0.01 * bank_one_month) - repay_money),'$')
-                        elif repay_money > game.data['money']:
-                            print('你没有足够的余额还款！')
+                        if repay_money > 0 and repay_money <= game.get_money():
+                                game.subtract_money(repay_money)
+                                print('还款成功！')
+                                if repay_money >= game.get_currency('bank_borrow_money') * (1 + 0.01 * bank_one_month):
+                                    game.data['bank_have_borrow'] = 0
+                                    print('你已经完全还清了bank的借款！')
+                                    game.save_data()
+                                    os.system('cls')
+                                    return False
+                                else:
+                                    print('你还欠bank',math.ceil(game.get_currency('bank_borrow_money') * (1 + 0.01 * bank_one_month) - repay_money),'$')
+                                    return False
+                        elif repay_money > game.get_money():
+                                print('你没有足够的余额还款！')
+                                time.sleep(1)
+                                return False
                         elif repay_money <= 0:
-                            print('请输入一个正数！')
-                else:
-                    print('你没有bank的借款需要还！')
-            elif repay_choice == '2':
-                if individual_have_borronw == 1:
-                    indivdual_one_month = game.data['month'] - individual_borrow_month
-                    if indivdual_one_month <= 1 :
-                        indivdual_one_month = 1
+                                print('请输入一个正数！')
+                                continue
                     else:
-                        indivdual_one_month = game.data['month'] - individual_borrow_month
-                        individual_repay_money = math.ceil(individual_borrow_money * (1 + 0.04 * indivdual_one_month))
+                        print('你没有bank的借款需要还！')
+                        return False
+                elif repay_choice == '2':
+                    if game.data['individual_have_borrow'] == 1:
+                        indivdual_one_month = game.data['month'] - game.data['individual_borrow_month']
+                        if indivdual_one_month <= 1 :
+                            indivdual_one_month = 1
+                        else:
+                            indivdual_one_month = game.data['month'] - game.data['individual_borrow_month']
+                        individual_repay_money = math.ceil(game.get_currency('individual_borrow_money') * (1 + 0.04 * indivdual_one_month))
                         print('你需要还款的金额为:',individual_repay_money,'$')
                         repay_money = int(input('请输入你要还款的金额: '))
-                        if repay_money > 0 and repay_money <= game.data['money']:
+                        if repay_money > 0 and repay_money <= game.get_money():
+                                game.subtract_money(repay_money)
+                                print('还款成功！')
+                                if repay_money >= game.get_currency('individual_borrow_money') * (1 + 0.04 * indivdual_one_month):
+                                    game.data['individual_have_borrow'] = 0
+                                    print('你已经完全还清了individual的借款！')
+                                    game.save_data()
+                                    os.system('cls')
+                                    return False
+                                else:
+                                    print('你还欠individual',math.ceil(game.get_currency('individual_borrow_money') * (1 + 0.04 * indivdual_one_month) - repay_money),'$')
+                                    time.sleep(1)
+                                    return False
+                        elif repay_money > game.get_money():
+                                print('你没有足够的余额还款！')
+                                time.sleep(1)
+                                return False
+                        elif repay_money <= 0:
+                                print('请输入一个正数！')
+                                continue
+                    else:
+                        print('你没有individual的借款需要还！')
+                        return False
+                elif repay_choice == '3':
+                    if game.data['xx_have_borrow'] == 1:
+                        xx_one_month = game.data['month'] - game.data['xx_borrow_month']
+                        if xx_one_month <= 1 :
+                            xx_one_month = 1
+                        else:
+                            xx_one_month = game.data['month'] - game.data['xx_borrow_month']
+                        xx_repay_money = math.ceil(game.get_currency('xx_borrow_money') * (1 + 0.1 * xx_one_month))
+                        print('你需要还款的金额为:',xx_repay_money,'$')
+                        repay_money = int(input('请输入你要还款的金额: '))
+                        if repay_money > 0 and repay_money <= game.get_money():
                             game.subtract_money(repay_money)
                             print('还款成功！')
-                            if repay_money >= individual_borrow_money * (1 + 0.04 * indivdual_one_month):
-                                individual_have_borronw=0
-                                print('你已经完全还清了individual的借款！')
+                            if repay_money >= game.get_currency('xx_borrow_money') * (1 + 0.1 * xx_one_month):
+                                game.data['xx_have_borrow'] = 0
+                                print('你已经完全还清了xx科技公司的借款！')
+                                game.save_data()
+                                os.system('cls')
+                                return False
                             else:
-                                print('你还欠individual',math.ceil(individual_borrow_money * (1 + 0.04 * indivdual_one_month) - repay_money),'$')
-                        elif repay_money > game.data['money']:
+                                print('你还欠xx科技公司',math.ceil(game.get_currency('xx_borrow_money') * (1 + 0.1 * xx_one_month) - repay_money),'$')
+                                time.sleep(1)
+                                return False
+                        elif repay_money > game.get_money():
                             print('你没有足够的余额还款！')
+                            return False
                         elif repay_money <= 0:
                             print('请输入一个正数！')
-                else:
-                    print('你没有individual的借款需要还！')
-            elif repay_choice == '3':
-                if xx_have_borronw == 1:
-                    xx_one_month = game.data['month'] - xx_borrow_month
-                    if xx_one_month <= 1 :
-                        xx_one_month = 1
+                            continue
                     else:
-                        xx_one_month = game.data['month'] - xx_borrow_month
-                    xx_repay_money = math.ceil(xx_borrow_money * (1 + 0.1 * xx_one_month))
-                    print('你需要还款的金额为:',xx_repay_money,'$')
-                    repay_money = int(input('请输入你要还款的金额: '))
-                    if repay_money > 0 and repay_money <= game.data['money']:
-                        game.subtract_money(repay_money)
-                        print('还款成功！')
-                        if repay_money >= xx_borrow_money * (1 + 0.1 * xx_one_month):
-                            xx_have_borronw=0
-                            print('你已经完全还清了xx科技公司的借款！')
-                        else:
-                            print('你还欠xx科技公司',math.ceil(xx_borrow_money * (1 + 0.1 * xx_one_month) - repay_money),'$')
-                    elif repay_money > game.data['money']:
-                        print('你没有足够的余额还款！')
-                    elif repay_money <= 0:
-                        print('请输入一个正数！')
-                else:
-                    print('你没有xx科技公司的借款需要还！')
-        
-
-
-        elif keyboard.is_pressed('2'):
-            print('你选择了individual')
-            # 在这里添加individual的逻辑
-            time.sleep(1)
-        elif keyboard.is_pressed('3'):
-            print('你选择了xx科技公司')
-            # 在这里添加xx科技公司的逻辑
-            time.sleep(1)
-        elif keyboard.is_pressed('4'):
-            print('你选择了还款')
-            # 在这里添加还款的逻辑
-            time.sleep(1)
-        elif keyboard.is_pressed('0'):
-            break
+                        print('你没有xx科技公司的借款需要还！')
+                        return False
 
 def pp():
     print('内哥不是内哥，只有第三个是能玩的，别的有时间再搞，工作量大，还没搞好'
@@ -919,12 +1084,13 @@ while True:
             game_mode = 'get_money'
             print('你选择了借money')
             get_money()
-            time.sleep(1)
+            time.sleep(0.2)
         elif main_input == '6' or main_menu_input == '6':#管理员
             print('进入管理员模式')
             password_input = input(str('请输入管理员密码: '))
             if game.verify_password(password_input):
                 game_mode = 'admin'
+                admin_print()
             else:
                 print('密码错误')
                 main_print()
@@ -966,12 +1132,24 @@ while True:
             if "help" in main_input:#帮助
                 game_mode = 'nothing'
                 os.system('cls')
-                print('\next 下一个月')
+                print(r'\next 下一个月')
+                print(r'\admin 管理员模式')
                 print('0.返回')
-                if keyboard.is_pressed('0'):
-                    game_mode = 'main'
+                try:
+                    help_input = input(int('请输入指令：'))
+                except ValueError:
+                    print('输入格式错误')
+                    continue
+                if help_input == 0:
+                    game_mode = 'nothing'
+                    game_mode = 'admin'
                     main_print()
-                    time.sleep(1)
+                    time.sleep(0.5)
+            elif "admin" in main_input:#管理员模式
+                game_mode = 'nothing'
+                game_mode = 'admin'
+                admin_print()
+                os.system('cls')
             elif "next" in main_input:#下一个月
                 game.data['month'] += 1
                 game.data['month_turn'] = 0
@@ -1019,7 +1197,6 @@ while True:
                 game_mode_3()
                 time.sleep(1)
     elif game_mode == 'admin':#管理员
-        admin_print()
         if keyboard.is_pressed('1'):
                 new_password = input('请输入新的管理员密码: ')
                 # 直接加密并保存新密码
@@ -1132,15 +1309,26 @@ while True:
                 game_mode = 'nothing'
                 game_mode = 'admin'
         elif keyboard.is_pressed('3'):#重置    增加金钱重置
-                game.data['money'] = 1000000
+                game.data['money'] = 1000000000
                 game.data['levels'] = 1
                 game.data['levels_num'] = 0
                 game.data['month'] = 0
                 game.data['month_turn'] = 0
-                game.data['bank_have_borronw'] = 0
-                game.data['individual_have_borronw'] = 0
-                game.data['xx_have_borronw'] = 0
-                
+                game.data['bank_have_borrow'] = 0
+                game.data['individual_have_borrow'] = 0
+                game.data['xx_have_borrow'] = 0
+                game.data['bank_borrow_month'] = 0
+                game.data['individual_borrow_month'] = 0
+                game.data['xx_borrow_month'] = 0
+                game.set_currency('GBP', 0)
+                game.set_currency('EGP', 0)
+                game.set_currency('HKP', 0)
+                game.set_currency('JPY', 0)
+                game.set_currency('bank_borrow_money', 0)
+                game.set_currency('individual_borrow_money', 0)
+                game.set_currency('xx_borrow_money', 0)
+                game.set_gold(0)
+
                 game.save_data()
                 print('玩家数据已重置')
                 admin_print()
@@ -1156,15 +1344,13 @@ while True:
                 game_mode = 'main'
                 time.sleep(1)
     elif game_mode == 'get_money':#借钱返回逻辑
-
         if keyboard.is_pressed('0'):
             game_mode = 'main'
             main_print()
             time.sleep(1)
         elif get_money() == False:
-                
-                game_mode = 'main'
                 main_print()
+                game_mode = 'main'
                 time.sleep(1)
     elif game_mode == 'blackjack':
         ai_card_num = 0#初始化AI手牌数量
